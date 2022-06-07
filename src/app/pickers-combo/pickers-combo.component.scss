@@ -31,11 +31,12 @@
   min-height: 50px;
 }
 .group_2 {
-  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   position: relative;
+  padding: 16px;
+  width: 1000px;
   min-width: 50px;
 }
 .user-input {
@@ -43,14 +44,13 @@
   height: max-content;
   min-width: min-content;
 }
-.button {
-  margin: 16px;
-  height: max-content;
+.dropdown {
+  width: 188px;
   min-width: min-content;
   flex-shrink: 0;
 }
-.dropdown {
-  width: 188px;
+.button {
+  height: max-content;
   min-width: min-content;
   flex-shrink: 0;
 }

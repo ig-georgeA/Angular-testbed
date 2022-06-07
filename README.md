@@ -1,4 +1,4 @@
-# angular-testbed
+# component-testbed
 
 This project was generated with [App Builder Code Gen](https://www.infragistics.com/products/appbuilder).
 
