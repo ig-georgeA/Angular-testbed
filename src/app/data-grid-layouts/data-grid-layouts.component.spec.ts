@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { IgxGridModule } from 'igniteui-angular';
 import { DataGridLayoutsComponent } from './data-grid-layouts.component';
@@ -12,7 +13,7 @@ describe('DataGridLayoutsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ DataGridLayoutsComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxGridModule ]
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxGridModule ]
     })
     .compileComponents();
   });

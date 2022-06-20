@@ -11,12 +11,12 @@ import { ExpansionPanelsComponent } from './expansion-panels/expansion-panels.co
 import { CardCalendarComponent } from './card-calendar/card-calendar.component';
 import { ListsDataComponent } from './lists-data/lists-data.component';
 import { DataGridLayoutsComponent } from './data-grid-layouts/data-grid-layouts.component';
+import { ChartsComponent } from './charts/charts.component';
 import { TypeScaleComponent } from './type-scale/type-scale.component';
 import { InputsComponent } from './inputs/inputs.component';
 import { PickersComboComponent } from './pickers-combo/pickers-combo.component';
 import { DialogsAndOverlaysComponent } from './dialogs-and-overlays/dialogs-and-overlays.component';
 import { ImageComponent } from './image/image.component';
-import { CopyPasteComponent } from './copy-paste/copy-paste.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'layouts', pathMatch: 'full' },
@@ -28,12 +28,12 @@ export const routes: Routes = [
   { path: 'card-calendar', component: CardCalendarComponent, data: { text: 'Card +Calendar' } },
   { path: 'lists-data', component: ListsDataComponent, data: { text: 'Lists + data' } },
   { path: 'data-grid-layouts', component: DataGridLayoutsComponent, data: { text: 'Data-grid layouts' } },
+  { path: 'charts', component: ChartsComponent, data: { text: 'Charts' } },
   { path: 'type-scale', component: TypeScaleComponent, data: { text: 'Type + scale' } },
   { path: 'inputs', component: InputsComponent, data: { text: 'Inputs' } },
   { path: 'pickers-combo', component: PickersComboComponent, data: { text: 'Pickers + Combo' } },
   { path: 'dialogs-and-overlays', component: DialogsAndOverlaysComponent, data: { text: 'Dialogs and overlays' } },
   { path: 'image', component: ImageComponent, data: { text: 'Image' } },
-  { path: 'copy-paste', component: CopyPasteComponent, data: { text: 'copy-paste' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 
