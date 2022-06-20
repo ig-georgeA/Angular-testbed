@@ -21,6 +21,35 @@
         </button>
       </igx-card-actions>
     </igx-card>
+    <igx-expansion-panel class="expansion-panel">
+      <igx-expansion-panel-header iconPosition="right">
+        <igx-expansion-panel-title>
+          Folders
+        </igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+      <igx-expansion-panel-body>
+        <igx-list class="list">
+          <igx-list-item [isHeader]="false">
+            <span igxListThumbnail>
+              <igx-avatar icon="folder" [roundShape]="true" class="avatar"></igx-avatar>
+            </span>
+            <span igxListLineTitle>Title goes here</span>
+          </igx-list-item>
+          <igx-list-item [isHeader]="false">
+            <span igxListThumbnail>
+              <igx-avatar icon="folder" [roundShape]="true" class="avatar"></igx-avatar>
+            </span>
+            <span igxListLineTitle>Title goes here</span>
+          </igx-list-item>
+          <igx-list-item [isHeader]="false">
+            <span igxListThumbnail>
+              <igx-avatar icon="folder" [roundShape]="true" class="avatar"></igx-avatar>
+            </span>
+            <span igxListLineTitle>Title goes here</span>
+          </igx-list-item>
+        </igx-list>
+      </igx-expansion-panel-body>
+    </igx-expansion-panel>
     <igx-expansion-panel [collapsed]="false" class="expansion-panel">
       <igx-expansion-panel-header iconPosition="right">
         <igx-expansion-panel-title>
@@ -66,50 +95,27 @@
         <igx-list class="list">
           <igx-list-item [isHeader]="false">
             <span igxListThumbnail>
-              <igx-avatar icon="bluetooth_searching" [roundShape]="true" class="avatar"></igx-avatar>
+              <igx-avatar icon="palette" [roundShape]="true" class="avatar"></igx-avatar>
             </span>
-            <span igxListLineTitle>Bluetooth</span>
+            <span igxListLineTitle>Theme</span>
           </igx-list-item>
           <igx-list-item [isHeader]="false">
             <span igxListThumbnail>
-              <igx-avatar icon="wifi" [roundShape]="true" class="avatar"></igx-avatar>
+              <igx-avatar icon="vpn_key" [roundShape]="true" class="avatar"></igx-avatar>
             </span>
-            <span igxListLineTitle>Wi-Fi</span>
+            <span igxListLineTitle>Change password</span>
           </igx-list-item>
           <igx-list-item [isHeader]="false">
             <span igxListThumbnail>
-              <igx-avatar icon="settings_ethernet" [roundShape]="true" class="avatar"></igx-avatar>
+              <igx-avatar icon="call_split" [roundShape]="true" class="avatar"></igx-avatar>
             </span>
-            <span igxListLineTitle>Ethernet</span>
-          </igx-list-item>
-        </igx-list>
-      </igx-expansion-panel-body>
-    </igx-expansion-panel>
-    <igx-expansion-panel class="expansion-panel">
-      <igx-expansion-panel-header iconPosition="right">
-        <igx-expansion-panel-title>
-          Folders
-        </igx-expansion-panel-title>
-      </igx-expansion-panel-header>
-      <igx-expansion-panel-body>
-        <igx-list class="list">
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Title goes here</span>
+            <span igxListLineTitle>Mail rules</span>
           </igx-list-item>
           <igx-list-item [isHeader]="false">
             <span igxListThumbnail>
-              <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
+              <igx-avatar icon="forum" [roundShape]="true" class="avatar"></igx-avatar>
             </span>
-            <span igxListLineTitle>Title goes here</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Title goes here</span>
+            <span igxListLineTitle>Chat preferences</span>
           </igx-list-item>
         </igx-list>
       </igx-expansion-panel-body>
