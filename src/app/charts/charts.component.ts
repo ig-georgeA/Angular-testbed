@@ -8,6 +8,7 @@ import { FinancialService } from '../services/financial.service';
 })
 export class ChartsComponent implements OnInit {
   public financialBoxOfficeRevenue: any = null;
+  public financialTrading: any = null;
   public financialGlobalElectricityDemand: any = null;
 
   constructor(
@@ -17,6 +18,7 @@ export class ChartsComponent implements OnInit {
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
     this.financialService.getData('Box Office Revenue').subscribe(data => this.financialBoxOfficeRevenue = data);
+    this.financialService.getData('Trading').subscribe(data => this.financialTrading = data);
     this.financialService.getData('Global Electricity Demand').subscribe(data => this.financialGlobalElectricityDemand = data);
   }
 }
