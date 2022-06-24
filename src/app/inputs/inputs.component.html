@@ -52,8 +52,12 @@
     <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="medium" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
     <igx-hint>Date sample hint</igx-hint>
   </igx-input-group>
+  <igx-input-group type="border" class="igx-typography__body-1 textarea">
+    <label igxLabel>Label/Placeholder</label>
+    <textarea igxInput></textarea>
+  </igx-input-group>
   <igx-slider [value]="50" [continuous]="true" [disabled]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" [showTicks]="true" class="slider"></igx-slider>
-  <igx-slider [value]="50" [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [secondaryTickLabels]="false" [showTicks]="true" class="slider_1"></igx-slider>
+  <igx-slider [value]="50" [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [secondaryTickLabels]="false" [showTicks]="true" class="slider"></igx-slider>
   <div class="row-layout group">
     <igx-chip class="chip">
       <igx-prefix>
@@ -86,10 +90,6 @@
     </igx-chip>
   </div>
   <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" class="slider_1"></igx-slider>
-  <igx-input-group type="border" class="igx-typography__body-1 textarea">
-    <label igxLabel>Label/Placeholder</label>
-    <textarea igxInput></textarea>
-  </igx-input-group>
 </div>
 <div class="column-layout group_1">
   <igx-input-group type="border" class="input">
