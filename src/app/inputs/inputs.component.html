@@ -31,10 +31,6 @@
     <input type="text" igxInput />
     <label igxLabel>Label/Placeholder</label>
   </igx-input-group>
-  <igx-input-group type="border" class="input-group">
-    <label igxLabel for="inputField">Date</label>
-    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="MM/dd/yyyy" displayFormat="mediumDate" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
-  </igx-input-group>
   <igx-input-group type="box" class="input-group">
     <label igxLabel for="inputField">Date-box style-input format 1</label>
     <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="MM/dd/yyyy" displayFormat="longDate" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
@@ -43,21 +39,13 @@
     <label igxLabel for="inputField">Date-box style - input format 2</label>
     <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="longDate" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
   </igx-input-group>
-  <igx-input-group type="border" class="input-group">
-    <label igxLabel for="inputField">Date</label>
-    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
-  </igx-input-group>
-  <igx-input-group type="border" class="input-group">
-    <label igxLabel for="inputField">Date</label>
-    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="medium" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
-    <igx-hint>Date sample hint</igx-hint>
-  </igx-input-group>
-  <igx-input-group type="border" class="igx-typography__body-1 textarea">
+  <igx-input-group type="box" class="igx-typography__body-1 textarea">
     <label igxLabel>Label/Placeholder</label>
     <textarea igxInput></textarea>
   </igx-input-group>
-  <igx-slider [value]="50" [continuous]="true" [disabled]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" [showTicks]="true" class="slider"></igx-slider>
-  <igx-slider [value]="50" [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [secondaryTickLabels]="false" [showTicks]="true" class="slider"></igx-slider>
+  <igx-date-picker type="box" mode="dialog" class="date-picker">
+    <label igxLabel>Date</label>
+  </igx-date-picker>
   <div class="row-layout group">
     <igx-chip class="chip">
       <igx-prefix>
@@ -88,8 +76,24 @@
       </igx-suffix>
       Country
     </igx-chip>
+    <igx-chip [disabled]="true" class="chip_1">
+      <igx-prefix>
+        <igx-icon class="icon_2">
+          account_balance
+        </igx-icon>
+      </igx-prefix>
+      <igx-suffix>
+        <igx-icon class="icon_2">
+          clear
+        </igx-icon>
+      </igx-suffix>
+      Country
+    </igx-chip>
   </div>
+  <igx-slider [value]="50" [continuous]="true" [disabled]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" [showTicks]="true" class="slider"></igx-slider>
+  <igx-slider [value]="50" [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [secondaryTickLabels]="false" [showTicks]="true" class="slider"></igx-slider>
   <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" class="slider_1"></igx-slider>
+  <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="1" [showTicks]="true" class="slider_2"></igx-slider>
 </div>
 <div class="column-layout group_1">
   <igx-input-group type="border" class="input">
@@ -127,6 +131,17 @@
     <input type="text" igxInput />
     <label igxLabel>Prefix, helptext and border</label>
     <igx-hint>sample hint text</igx-hint>
+  </igx-input-group>
+  <igx-date-picker type="border" mode="dialog" class="date-picker">
+    <label igxLabel>Date</label>
+  </igx-date-picker>
+  <igx-input-group type="border" class="input-group">
+    <label igxLabel for="inputField">Date</label>
+    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="MM/dd/yyyy" displayFormat="mediumDate" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
+  </igx-input-group>
+  <igx-input-group type="border" class="input-group">
+    <label igxLabel for="inputField">Date</label>
+    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
   </igx-input-group>
   <div class="row-layout group_2">
     <button igxButton="outlined" igxRipple class="button">
