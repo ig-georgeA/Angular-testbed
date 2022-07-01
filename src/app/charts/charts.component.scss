@@ -40,18 +40,18 @@
   flex-basis: 0;
 }
 .category-chart {
-  --x-axis-label-text-style: normal 400 14px Titillium Web;
-  --y-axis-label-text-style: normal 400 14px Titillium Web;
-  --x-axis-title-text-style: normal 400 14px Titillium Web;
-  --y-axis-title-text-style: normal 400 14px Titillium Web;
-  --title-text-style: normal 600 20px Titillium Web;
+  --x-axis-label-text-style: normal 400 14px Roboto;
+  --y-axis-label-text-style: normal 400 14px Roboto;
+  --x-axis-title-text-style: normal 400 14px Roboto;
+  --y-axis-title-text-style: normal 400 14px Roboto;
+  --title-text-style: normal 600 16px Roboto;
   min-width: 400px;
   min-height: 300px;
   flex-grow: 1;
   flex-basis: 0;
 }
 .pie-chart {
-  --text-style: normal 400 14px Titillium Web;
+  --text-style: normal 400 14px Roboto;
   min-width: 250px;
   min-height: 250px;
   flex-grow: 1;

@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { PositionComponent } from './position/position.component';
 import { TabLayoutComponent } from './tab-layout/tab-layout.component';
-import { IgxTabsModule, IgxIconModule, IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxExpansionPanelModule, IgxListModule, IgxInputGroupModule, IgxCheckboxModule, IgxCalendarModule, IgxGridModule, IgxDateTimeEditorModule, IgxSliderModule, IgxChipsModule, IgxButtonGroupModule, IgxSwitchModule, IgxRadioModule, IgxSelectModule, IgxComboModule, IgxToggleModule, IgxDropDownModule, IgxDialogModule, IgxSnackbarModule, IgxBannerModule, IgxNavbarModule, IgxNavigationDrawerModule } from 'igniteui-angular';
+import { IgxTabsModule, IgxIconModule, IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxExpansionPanelModule, IgxListModule, IgxInputGroupModule, IgxCheckboxModule, IgxCalendarModule, IgxGridModule, IgxDateTimeEditorModule, IgxDatePickerModule, IgxChipsModule, IgxSliderModule, IgxButtonGroupModule, IgxSwitchModule, IgxRadioModule, IgxSelectModule, IgxComboModule, IgxToggleModule, IgxDropDownModule, IgxDialogModule, IgxSnackbarModule, IgxBannerModule, IgxNavbarModule, IgxNavigationDrawerModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
 import { ExpansionPanelsComponent } from './expansion-panels/expansion-panels.component';
 import { CardCalendarComponent } from './card-calendar/card-calendar.component';
@@ -59,8 +59,9 @@ import { HttpClientModule } from '@angular/common/http';
     IgxCategoryChartModule,
     IgxPieChartModule,
     IgxDateTimeEditorModule,
-    IgxSliderModule,
+    IgxDatePickerModule,
     IgxChipsModule,
+    IgxSliderModule,
     IgxButtonGroupModule,
     IgxSwitchModule,
     IgxRadioModule,

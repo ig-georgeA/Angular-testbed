@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NorthwindService } from '../services/northwind.service';
 import { Northwind_JasonService } from '../services/northwind_jason.service';
+import { NorthwindService } from '../services/northwind.service';
 
 @Component({
   selector: 'app-data-grid-layouts',
@@ -8,12 +8,12 @@ import { Northwind_JasonService } from '../services/northwind_jason.service';
   styleUrls: ['./data-grid-layouts.component.scss']
 })
 export class DataGridLayoutsComponent implements OnInit {
-  public northwindEmployees: any = null;
   public northwindJasonApiCustomers: any = null;
+  public northwindEmployees: any = null;
 
   constructor(
-    private northwindService: NorthwindService,
     private northwind_JasonService: Northwind_JasonService,
+    private northwindService: NorthwindService,
   ) {}
 
   ngOnInit() {
