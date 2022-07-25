@@ -19,7 +19,7 @@
   </igx-input-group>
   <igx-input-group type="box" class="input">
     <igx-prefix>
-      <igx-icon class="icon_1">
+      <igx-icon class="icon">
         person
       </igx-icon>
     </igx-prefix>
@@ -43,13 +43,13 @@
     <label igxLabel>Label/Placeholder</label>
     <textarea igxInput></textarea>
   </igx-input-group>
-  <igx-date-picker type="box" mode="dialog" class="date-picker">
+  <igx-date-picker type="box" class="date-picker">
     <label igxLabel>Date</label>
   </igx-date-picker>
   <div class="row-layout group">
     <igx-chip class="chip">
       <igx-prefix>
-        <igx-icon class="icon_2">
+        <igx-icon class="icon_1">
           place
         </igx-icon>
       </igx-prefix>
@@ -57,7 +57,7 @@
     </igx-chip>
     <igx-chip class="chip">
       <igx-prefix>
-        <igx-icon class="icon_2">
+        <igx-icon class="icon_1">
           place
         </igx-icon>
       </igx-prefix>
@@ -65,12 +65,12 @@
     </igx-chip>
     <igx-chip class="chip_1">
       <igx-prefix>
-        <igx-icon class="icon_2">
+        <igx-icon class="icon_1">
           account_balance
         </igx-icon>
       </igx-prefix>
       <igx-suffix>
-        <igx-icon class="icon_2">
+        <igx-icon class="icon_1">
           clear
         </igx-icon>
       </igx-suffix>
@@ -78,12 +78,12 @@
     </igx-chip>
     <igx-chip [disabled]="true" class="chip_1">
       <igx-prefix>
-        <igx-icon class="icon_2">
+        <igx-icon class="icon_1">
           account_balance
         </igx-icon>
       </igx-prefix>
       <igx-suffix>
-        <igx-icon class="icon_2">
+        <igx-icon class="icon_1">
           clear
         </igx-icon>
       </igx-suffix>
@@ -225,7 +225,7 @@
         Label
       </igx-radio>
     </igx-radio-group>
-    <igx-radio-group value="1" [required]="true" class="user-input_1">
+    <igx-radio-group [disabled]="true" value="1" [required]="true" class="user-input_1">
       <igx-radio value="1" class="radio">
         Label
       </igx-radio>
@@ -251,6 +251,9 @@
   </div>
   <igx-avatar icon="people" [roundShape]="true" class="avatar"></igx-avatar>
   <div class="row-layout group_8">
+    <igx-icon class="icon_2">
+      person
+    </igx-icon>
     <igx-icon class="icon_3">
       person
     </igx-icon>
@@ -258,9 +261,6 @@
       person
     </igx-icon>
     <igx-icon class="icon_5">
-      person
-    </igx-icon>
-    <igx-icon class="icon_6">
       person
     </igx-icon>
   </div>

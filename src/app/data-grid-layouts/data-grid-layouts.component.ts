@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Northwind_JasonService } from '../services/northwind_jason.service';
+import { NorthwindJasonService } from '../services/northwind-jason.service';
 import { NorthwindService } from '../services/northwind.service';
 
 @Component({
@@ -12,13 +12,13 @@ export class DataGridLayoutsComponent implements OnInit {
   public northwindEmployees: any = null;
 
   constructor(
-    private northwind_JasonService: Northwind_JasonService,
+    private northwindJasonService: NorthwindJasonService,
     private northwindService: NorthwindService,
   ) {}
 
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
     this.northwindService.getData('Employees').subscribe(data => this.northwindEmployees = data);
-    this.northwind_JasonService.getApiCustomers().subscribe(data => this.northwindJasonApiCustomers = data);
+    this.northwindJasonService.getApiCustomers().subscribe(data => this.northwindJasonApiCustomers = data);
   }
 }

@@ -5,18 +5,12 @@
 @use "igniteui-angular/theming" as *;
 
 @include core();
-@include typography($font-family: "Roboto", $type-scale: $bootstrap-type-scale);
+@include typography($font-family: "IBM Plex Sans");
 
 $custom-palette: palette(
-  $primary: #007bff,
-  $secondary: #6c757d,
-  $surface: #f8f9fa,
-  $error: #dc3545,
-  $success: #28a745,
-  $warn: #ffc107,
-  $info: #17a2b8,
-  $variant: 'bootstrap');
-@include theme($palette: $custom-palette, $schema: $light-bootstrap-schema);
+  $primary: #2f6793,
+  $secondary: #94549f);
+@include theme($custom-palette);
 
 body {
   background: hsla(var(--igx-surface-500));
