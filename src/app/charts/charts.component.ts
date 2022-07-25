@@ -17,8 +17,8 @@ export class ChartsComponent implements OnInit {
 
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
-    this.financialService.getData('Box Office Revenue').subscribe(data => this.financialBoxOfficeRevenue = data);
+    this.financialService.getData('BoxOfficeRevenue').subscribe(data => this.financialBoxOfficeRevenue = data);
     this.financialService.getData('Trading').subscribe(data => this.financialTrading = data);
-    this.financialService.getData('Global Electricity Demand').subscribe(data => this.financialGlobalElectricityDemand = data);
+    this.financialService.getData('GlobalElectricityDemand').subscribe(data => this.financialGlobalElectricityDemand = data);
   }
 }
