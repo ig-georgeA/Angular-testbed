@@ -53,14 +53,7 @@
   height: max-content;
   min-width: 320px;
 }
-.card_1 {
-  height: max-content;
-  min-width: 320px;
-}
 .group_2 {
-  flex-grow: 1;
-}
-.group_3 {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
@@ -69,7 +62,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_4 {
+.group_3 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -79,6 +72,13 @@
   min-height: 50px;
   flex-grow: 1;
   flex-shrink: 0;
+}
+.card_1 {
+  height: max-content;
+  min-width: 320px;
+}
+.group_4 {
+  flex-grow: 1;
 }
 .body-content {
   min-width: 50px;
