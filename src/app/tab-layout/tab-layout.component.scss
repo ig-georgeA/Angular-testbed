@@ -73,11 +73,19 @@
   flex-grow: 1;
   flex-shrink: 0;
 }
+.group_4 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
 .card_1 {
   height: max-content;
   min-width: 320px;
 }
-.group_4 {
+.group_5 {
   flex-grow: 1;
 }
 .body-content {
@@ -119,6 +127,12 @@
   min-width: min-content;
 }
 .grid {
+  min-width: 600px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.grid_1 {
   min-width: 600px;
   min-height: 300px;
 }
