@@ -20,7 +20,7 @@
     <igx-list class="list">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar [src]="item.avatarUrl" size="medium"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" size="medium" class="avatar"></igx-avatar>
         </span>
         <span igxListLineTitle>{{ item.lastName }}</span>
         <span igxListLineSubTitle>{{ item.title }}</span>
@@ -36,7 +36,7 @@
     <igx-list class="list">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar [src]="item.avatarUrl" size="large" [roundShape]="true"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" size="large" [roundShape]="true" class="avatar"></igx-avatar>
         </span>
         <span igxListLineTitle>{{ item.lastName }}</span>
         <span igxListLineSubTitle>{{ item.title }}</span>

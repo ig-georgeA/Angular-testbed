@@ -97,6 +97,7 @@
   min-height: 50px;
 }
 .avatar {
+  --background: none;
   margin: 0.0px;
   padding: 0.0px;
 }
@@ -107,6 +108,9 @@
   margin: 0.0px;
   padding: 0.0px;
   height: max-content;
+}
+.avatar_1 {
+  --background: none;
 }
 .calendar {
   margin: 16px;

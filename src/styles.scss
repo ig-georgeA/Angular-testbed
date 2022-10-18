@@ -2,11 +2,19 @@
 
 // Standard CSS normalize, comment out if not required or using a different module
 @use "~minireset.css/minireset";
-@use "igniteui-angular/theming" as *;
+@use "@infragistics/igniteui-angular/theming" as *;
 
 @include core();
-@include typography();
-@include light-theme($light-material-palette);
+@include typography($font-family: "Open Sans", $type-scale: $fluent-type-scale);
+
+$custom-palette: palette(
+  $primary: #2b579a,
+  $secondary: #2b579a,
+  $error: #a80000,
+  $success: #107c10,
+  $warn: #797673,
+  $variant: 'fluent');
+@include theme($palette: $custom-palette, $schema: $light-fluent-schema);
 
 body {
   background: hsla(var(--igx-surface-500));
