@@ -2,7 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxExpansionPanelModule, IgxListModule, IgxInputGroupModule, IgxCheckboxModule } from 'igniteui-angular';
 import { ExpansionPanelsComponent } from './expansion-panels.component';
 
 describe('ExpansionPanelsComponent', () => {
@@ -12,7 +11,7 @@ describe('ExpansionPanelsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ ExpansionPanelsComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxCardModule, IgxAvatarModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxExpansionPanelModule, IgxListModule, IgxInputGroupModule, IgxCheckboxModule ]
+      imports: [ NoopAnimationsModule, FormsModule ]
     })
     .compileComponents();
   });
