@@ -79,6 +79,20 @@
   height: max-content;
   flex-shrink: 0;
 }
+.group_2 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  width: 350px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.accordion {
+  overflow-y: auto;
+  flex-shrink: 0;
+}
 .actions-content {
   min-width: 50px;
   min-height: 40px;
@@ -107,6 +121,11 @@
   padding: 0.0px;
   height: max-content;
 }
+.image {
+  object-fit: cover;
+  min-width: 0;
+  min-height: 0;
+}
 .button {
   height: max-content;
   min-width: min-content;
@@ -116,7 +135,7 @@
   padding: 0.0px;
   height: max-content;
 }
-.user-input_1 {
+.input-group-1_1 {
   margin: 0.0px 0.0px 16px;
   padding: 0.0px;
   height: max-content;
@@ -127,7 +146,16 @@
   width: max-content;
   height: max-content;
 }
+.button-1 {
+  color: hsla(var(--igx-primary-500));
+  margin: 0.0px 0.0px 16px;
+  padding: 0.0px;
+  height: max-content;
+}
 .list {
   height: max-content;
+}
+.tree {
   min-width: max-content;
+  min-height: max-content;
 }

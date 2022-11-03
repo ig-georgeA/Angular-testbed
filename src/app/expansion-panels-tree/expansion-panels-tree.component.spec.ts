@@ -2,22 +2,22 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import { DataGridLayoutsComponent } from './data-grid-layouts.component';
+import { ExpansionPanelsTreeComponent } from './expansion-panels-tree.component';
 
-describe('DataGridLayoutsComponent', () => {
-  let component: DataGridLayoutsComponent;
-  let fixture: ComponentFixture<DataGridLayoutsComponent>;
+describe('ExpansionPanelsTreeComponent', () => {
+  let component: ExpansionPanelsTreeComponent;
+  let fixture: ComponentFixture<ExpansionPanelsTreeComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataGridLayoutsComponent ],
+      declarations: [ ExpansionPanelsTreeComponent ],
       imports: [ NoopAnimationsModule, FormsModule ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataGridLayoutsComponent);
+    fixture = TestBed.createComponent(ExpansionPanelsTreeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
