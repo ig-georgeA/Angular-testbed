@@ -125,7 +125,7 @@
       <input type="text" igxInput />
       <label igxLabel>Username</label>
     </igx-input-group>
-    <igx-input-group type="box" class="user-input_1">
+    <igx-input-group type="box" class="input-group-1_1">
       <input type="password" igxInput />
       <label igxLabel>Password</label>
     </igx-input-group>
@@ -140,11 +140,98 @@
     <button igxButton="raised" igxRipple class="user-input">
       Sign in
     </button>
-    <button igxButton="outlined" igxRipple class="user-input_1">
+    <button igxButton="outlined" igxRipple class="button-1">
       Create a new account
     </button>
     <p class="igx-typography__caption text-2">
       By signing in, you are agreeing to our terms of use and privacy policy
     </p>
   </div>
+</div>
+<div class="column-layout group_2">
+  <igx-accordion [singleBranchExpand]="true" class="accordion">
+    <igx-expansion-panel>
+      <igx-expansion-panel-body>
+        <img src="/assets/SketchParser.png" class="image" />
+      </igx-expansion-panel-body>
+      <igx-expansion-panel-header>
+        <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+    </igx-expansion-panel>
+    <igx-expansion-panel>
+      <igx-expansion-panel-body>
+        <img src="/assets/Image.svg" class="image" />
+      </igx-expansion-panel-body>
+      <igx-expansion-panel-header>
+        <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+    </igx-expansion-panel>
+    <igx-expansion-panel>
+      <igx-expansion-panel-body>
+        <img src="/assets/BrandGuidelines.png" class="image" />
+      </igx-expansion-panel-body>
+      <igx-expansion-panel-header>
+        <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+      </igx-expansion-panel-header>
+    </igx-expansion-panel>
+  </igx-accordion>
+  <igx-tree class="tree">
+    <igx-tree-node [expanded]="true">
+      <igx-tree-node [expanded]="true">
+        Figma
+      </igx-tree-node>
+      <igx-tree-node [expanded]="true">
+        Adobe XD
+      </igx-tree-node>
+      <igx-tree-node [expanded]="true">
+        Adobe XD
+      </igx-tree-node>
+      <igx-tree-node [expanded]="true">
+        Adobe XD
+      </igx-tree-node>
+      <igx-tree-node [expanded]="true">
+        <igx-tree-node [expanded]="true">
+          Adobe XD
+        </igx-tree-node>
+        <igx-tree-node [expanded]="true">
+          Adobe XD
+        </igx-tree-node>
+        <igx-tree-node [expanded]="true">
+          Adobe XD
+        </igx-tree-node>
+        <igx-tree-node [expanded]="true">
+          Adobe XD
+        </igx-tree-node>
+        Adobe XD
+      </igx-tree-node>
+      <igx-tree-node [expanded]="true">
+        Sketch
+      </igx-tree-node>
+      Design
+    </igx-tree-node>
+    <igx-tree-node [expanded]="true">
+      <igx-tree-node [expanded]="true">
+        <igx-tree-node [expanded]="true">
+          Angular
+        </igx-tree-node>
+        <igx-tree-node [expanded]="true">
+          Angular
+        </igx-tree-node>
+        <igx-tree-node [expanded]="true">
+          Angular
+        </igx-tree-node>
+        <igx-tree-node [expanded]="true">
+          Angular
+        </igx-tree-node>
+        Angular
+      </igx-tree-node>
+      <igx-tree-node [expanded]="true">
+        Blazor
+      </igx-tree-node>
+      <igx-tree-node [expanded]="true">
+        Web components
+      </igx-tree-node>
+      Development
+    </igx-tree-node>
+  </igx-tree>
 </div>

@@ -32,13 +32,28 @@
       </igx-icon>
       <span>Open alert dialog</span>
     </button>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (rightButtonSelect)="alert.toggle()" (leftButtonSelect)="alert.toggle()" #alert></igx-dialog>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="OK" (rightButtonSelect)="dialog.toggle()" (leftButtonSelect)="dialog.toggle()" #dialog>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #alert>
+      <ng-container>
+        <p>Are you sure you want to do this?</p>
+      </ng-container>
+      <igx-dialog-actions>
+        <button igxButton="flat" igxRipple [igxToggleAction]="alert">Cancel</button>
+        <button igxButton="flat" igxRipple [igxToggleAction]="alert">OK</button>
+      </igx-dialog-actions>
+    </igx-dialog>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog>
       <igx-dialog-title>
         <h5>
           Confirmation
         </h5>
       </igx-dialog-title>
+      <ng-container>
+        <p>Are you sure you want to do this?</p>
+      </ng-container>
+      <igx-dialog-actions>
+        <button igxButton="flat" igxRipple [igxToggleAction]="dialog">Cancel</button>
+        <button igxButton="flat" igxRipple [igxToggleAction]="dialog">OK</button>
+      </igx-dialog-actions>
     </igx-dialog>
   </div>
   <div class="row-layout group_1">
@@ -48,12 +63,19 @@
       </igx-icon>
       <span>Open confirmation dialog</span>
     </button>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" message="Are you sure you want to do this?" leftButtonLabel="Cancel" rightButtonLabel="Show me" (leftButtonSelect)="confirm.toggle()" (rightButtonSelect)="customDialog.toggle()" #confirm>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #confirm>
       <igx-dialog-title>
         <h5>
           Show custom dialog?
         </h5>
       </igx-dialog-title>
+      <ng-container>
+        <p>Are you sure you want to do this?</p>
+      </ng-container>
+      <igx-dialog-actions>
+        <button igxButton="flat" igxRipple [igxToggleAction]="confirm">Cancel</button>
+        <button igxButton="flat" igxRipple [igxToggleAction]="customDialog">Show me</button>
+      </igx-dialog-actions>
     </igx-dialog>
   </div>
 </div>
