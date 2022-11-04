@@ -1,4 +1,4 @@
-# Component-test (app scenarios) (1)
+# Component-test (app scenarios)
 
 This project was generated with [App Builder Code Gen](https://www.infragistics.com/products/appbuilder).
 
