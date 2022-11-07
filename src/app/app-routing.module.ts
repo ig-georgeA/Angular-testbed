@@ -18,7 +18,6 @@ import { InputsComponent } from './inputs/inputs.component';
 import { PickersComboComponent } from './pickers-combo/pickers-combo.component';
 import { DialogsAndOverlaysComponent } from './dialogs-and-overlays/dialogs-and-overlays.component';
 import { ImageComponent } from './image/image.component';
-import { ChildViewComponent } from './child-view/child-view.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'tree-grid', pathMatch: 'full' },
@@ -37,7 +36,6 @@ export const routes: Routes = [
   { path: 'pickers-combo', component: PickersComboComponent, data: { text: 'Pickers + Combo' } },
   { path: 'dialogs-and-overlays', component: DialogsAndOverlaysComponent, data: { text: 'Dialogs and overlays' } },
   { path: 'image', component: ImageComponent, data: { text: 'Image' } },
-  { path: 'child-view', component: ChildViewComponent, data: { text: 'Child View' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

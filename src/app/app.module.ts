@@ -20,7 +20,6 @@ import { InputsComponent } from './inputs/inputs.component';
 import { PickersComboComponent } from './pickers-combo/pickers-combo.component';
 import { DialogsAndOverlaysComponent } from './dialogs-and-overlays/dialogs-and-overlays.component';
 import { ImageComponent } from './image/image.component';
-import { ChildViewComponent } from './child-view/child-view.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +37,7 @@ import { ChildViewComponent } from './child-view/child-view.component';
     InputsComponent,
     PickersComboComponent,
     DialogsAndOverlaysComponent,
-    ImageComponent,
-    ChildViewComponent
+    ImageComponent
   ],
   imports: [
     BrowserModule,
