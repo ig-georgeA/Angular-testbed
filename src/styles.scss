@@ -5,18 +5,15 @@
 @use "@infragistics/igniteui-angular/theming" as *;
 
 @include core();
-@include typography($font-family: "Open Sans", $type-scale: $fluent-type-scale);
+@include typography($font-family: "Lato", $type-scale: $fluent-type-scale);
 
 $custom-palette: palette(
-  $primary: #217346,
-  $secondary: #217346,
-  $surface: #222222,
+  $primary: #1daed9,
+  $secondary: #00c18a,
   $error: #a80000,
   $success: #107c10,
-  $warn: #797673,
-  $grays: #ffffff,
-  $variant: 'fluent');
-@include theme($palette: $custom-palette, $schema: $dark-fluent-schema);
+  $warn: #797673);
+@include theme($palette: $custom-palette, $schema: $light-fluent-schema, $roundness: 1);
 
 body {
   background: hsla(var(--igx-surface-500));

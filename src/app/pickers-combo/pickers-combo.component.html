@@ -1,20 +1,15 @@
 <div class="row-layout group">
   <div class="column-layout group_1">
-    <igx-select type="border" value="2" class="user-input">
+    <igx-select type="border" placeholder="Select a value" value="2" class="user-input">
       <igx-prefix>
         <igx-icon class="icon">
           person
         </igx-icon>
       </igx-prefix>
-      <igx-select-item value="1">
-        Value 1
+      <igx-select-item [value]="item.employeeID" *ngFor="let item of northwindEmployees">
+        {{ item.lastName }}
       </igx-select-item>
-      <igx-select-item value="2" [selected]="true">
-        value 2
-      </igx-select-item>
-      <igx-select-item value="3">
-        value 3
-      </igx-select-item>
+      <label igxLabel>Employees</label>
     </igx-select>
     <igx-select type="box" placeholder="pick a value" class="user-input">
       <igx-select-item value="Option">

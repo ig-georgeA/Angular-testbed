@@ -5,7 +5,6 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
-  overflow: auto;
 }
 .row-layout {
   display: flex;
@@ -96,11 +95,6 @@
   min-width: 50px;
   min-height: 50px;
 }
-.avatar {
-  --background: none;
-  margin: 0.0px;
-  padding: 0.0px;
-}
 .image {
   height: 100%;
 }
@@ -109,7 +103,12 @@
   padding: 0.0px;
   height: max-content;
 }
-.avatar_1 {
+.avatar-3 {
+  --background: none;
+  margin: 0.0px;
+  padding: 0.0px;
+}
+.avatar {
   --background: none;
 }
 .calendar {
