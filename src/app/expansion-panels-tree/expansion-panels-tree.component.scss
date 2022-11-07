@@ -5,22 +5,11 @@
   align-items: stretch;
   align-content: flex-start;
 }
-.row-layout {
-  display: flex;
-}
-.group {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
 .column-layout {
   display: flex;
   flex-direction: column;
 }
-.group_1 {
+.group {
   background-color: hsla(var(--igx-surface-500));
   border-color: hsla(var(--igx-grays-500));
   border-width: 0px 1px 0px 0px;
@@ -28,6 +17,7 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
+  overflow: auto;
   padding: 32px;
   width: 450px;
   min-width: 50px;
@@ -38,12 +28,25 @@
   margin: 0 0 8px;
   height: max-content;
 }
+.group_1 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
 .expansion-panel {
   margin: 0 0 8px;
   height: max-content;
   min-width: 0;
   min-height: 0;
   flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
 }
 .row-layout-1 {
   background-color: hsla(var(--igx-surface-500));
@@ -88,6 +91,7 @@
   width: 350px;
   min-width: 50px;
   min-height: 50px;
+  flex-shrink: 0;
 }
 .accordion {
   overflow-y: auto;
@@ -99,6 +103,10 @@
 }
 .avatar {
   --background: none;
+}
+.text {
+  height: max-content;
+  min-width: min-content;
 }
 .avatar_1 {
   background-color: transparent;
