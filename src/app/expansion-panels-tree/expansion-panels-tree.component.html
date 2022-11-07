@@ -1,120 +1,127 @@
-<div class="row-layout group">
+<div class="column-layout group">
+  <igx-card type="outlined" class="card">
+    <igx-card-header>
+      <div igxCardThumbnail>
+        <igx-avatar src="/assets/Avatar9.png" size="medium" [roundShape]="true" class="avatar"></igx-avatar>
+      </div>
+      <h3 igxCardHeaderTitle>
+        FirstName LastName
+      </h3>
+      <h5 igxCardHeaderSubtitle>
+        myemail@email.com
+      </h5>
+    </igx-card-header>
+    <igx-card-actions [reverse]="true" class="actions-content">
+      <button igxButton="flat" igxRipple class="button">
+        <igx-icon>
+          exit_to_app
+        </igx-icon>
+        <span>Sign out</span>
+      </button>
+    </igx-card-actions>
+  </igx-card>
   <div class="column-layout group_1">
-    <igx-card type="outlined" class="card">
-      <igx-card-header>
-        <div igxCardThumbnail>
-          <igx-avatar src="/assets/Avatar9.png" size="medium" [roundShape]="true" class="avatar"></igx-avatar>
-        </div>
-        <h3 igxCardHeaderTitle>
-          FirstName LastName
-        </h3>
-        <h5 igxCardHeaderSubtitle>
-          myemail@email.com
-        </h5>
-      </igx-card-header>
-      <igx-card-actions [reverse]="true" class="actions-content">
-        <button igxButton="flat" igxRipple class="button">
-          <igx-icon>
-            exit_to_app
-          </igx-icon>
-          <span>Sign out</span>
-        </button>
-      </igx-card-actions>
-    </igx-card>
-    <igx-expansion-panel class="expansion-panel">
-      <igx-expansion-panel-body>
-        <igx-list class="list">
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Title goes here</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Title goes here</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Title goes here</span>
-          </igx-list-item>
-        </igx-list>
-      </igx-expansion-panel-body>
-      <igx-expansion-panel-header>
-        <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
-      </igx-expansion-panel-header>
-    </igx-expansion-panel>
-    <igx-expansion-panel [collapsed]="false" class="expansion-panel">
-      <igx-expansion-panel-body>
-        <igx-list class="list">
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="person" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>User profile</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="assessment" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Analytics</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="book" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Favorites</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Shared with others</span>
-          </igx-list-item>
-        </igx-list>
-      </igx-expansion-panel-body>
-      <igx-expansion-panel-header>
-        <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
-      </igx-expansion-panel-header>
-    </igx-expansion-panel>
-    <igx-expansion-panel [collapsed]="false" class="expansion-panel">
-      <igx-expansion-panel-body>
-        <igx-list class="list">
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="palette" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Theme</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="vpn_key" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Change password</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="call_split" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Mail rules</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="forum" [roundShape]="true" class="avatar_1"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Chat preferences</span>
-          </igx-list-item>
-        </igx-list>
-      </igx-expansion-panel-body>
-      <igx-expansion-panel-header>
-        <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
-      </igx-expansion-panel-header>
-    </igx-expansion-panel>
+    <igx-avatar icon="people" [roundShape]="true" class="avatar"></igx-avatar>
+    <p class="igx-typography__subtitle-2 text">
+      Firname LastName
+    </p>
+    <p class="text">
+      myEmail@email.com
+    </p>
   </div>
+  <igx-expansion-panel class="expansion-panel">
+    <igx-expansion-panel-body>
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Title goes here</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Title goes here</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Title goes here</span>
+        </igx-list-item>
+      </igx-list>
+    </igx-expansion-panel-body>
+    <igx-expansion-panel-header>
+      <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+    </igx-expansion-panel-header>
+  </igx-expansion-panel>
+  <igx-expansion-panel [collapsed]="false" class="expansion-panel">
+    <igx-expansion-panel-body>
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="person" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>User profile</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="assessment" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Analytics</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="book" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Favorites</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Shared with others</span>
+        </igx-list-item>
+      </igx-list>
+    </igx-expansion-panel-body>
+    <igx-expansion-panel-header>
+      <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+    </igx-expansion-panel-header>
+  </igx-expansion-panel>
+  <igx-expansion-panel [collapsed]="false" class="expansion-panel">
+    <igx-expansion-panel-body>
+      <igx-list class="list">
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="palette" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Theme</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="vpn_key" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Change password</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="call_split" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Mail rules</span>
+        </igx-list-item>
+        <igx-list-item [isHeader]="false">
+          <span igxListThumbnail>
+            <igx-avatar icon="forum" [roundShape]="true" class="avatar_1"></igx-avatar>
+          </span>
+          <span igxListLineTitle>Chat preferences</span>
+        </igx-list-item>
+      </igx-list>
+    </igx-expansion-panel-body>
+    <igx-expansion-panel-header>
+      <igx-expansion-panel-title>Title goes here...</igx-expansion-panel-title>
+    </igx-expansion-panel-header>
+  </igx-expansion-panel>
 </div>
 <div class="row-layout row-layout-1">
   <div class="column-layout column-layout-1">
