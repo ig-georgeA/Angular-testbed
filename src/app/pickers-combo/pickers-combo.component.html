@@ -49,7 +49,7 @@
     </igx-select>
   </div>
   <div class="column-layout group_1">
-    <igx-combo type="border" placeholder="no label + placeholder" [data]="northwindCategories" valueKey="categoryID" displayKey="categoryID" [filterable]="true" [autoFocusSearch]="true" class="user-input">
+    <igx-combo type="border" placeholder="no label + placeholder" valueKey="categoryID" displayKey="name" [filterable]="true" [autoFocusSearch]="true" class="user-input">
       <igx-prefix>
         <igx-icon class="icon">
           person
@@ -58,7 +58,7 @@
       <igx-hint>sample hint text</igx-hint>
       <label igxLabel>Categories</label>
     </igx-combo>
-    <igx-combo type="border" placeholder="disabled combo" [disabled]="true" [data]="northwindCategories" valueKey="categoryID" displayKey="categoryID" [filterable]="true" class="user-input">
+    <igx-combo type="border" placeholder="disabled combo" [disabled]="true" valueKey="categoryID" displayKey="description" [filterable]="true" class="user-input">
       <igx-prefix>
         <igx-icon class="icon">
           person

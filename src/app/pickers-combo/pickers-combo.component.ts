@@ -8,7 +8,6 @@ import { NorthwindService } from '../services/northwind.service';
 })
 export class PickersComboComponent implements OnInit {
   public northwindEmployees: any = null;
-  public northwindCategories: any = null;
 
   constructor(
     private northwindService: NorthwindService,
@@ -17,6 +16,5 @@ export class PickersComboComponent implements OnInit {
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
     this.northwindService.getData('Employees').subscribe(data => this.northwindEmployees = data);
-    this.northwindService.getData('Categories').subscribe(data => this.northwindCategories = data);
   }
 }
