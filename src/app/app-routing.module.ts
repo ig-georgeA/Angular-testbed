@@ -20,7 +20,7 @@ import { DialogsAndOverlaysComponent } from './dialogs-and-overlays/dialogs-and-
 import { ImageComponent } from './image/image.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'tree-grid', pathMatch: 'full' },
+  { path: '', redirectTo: 'layouts', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'layouts', component: LayoutsComponent, data: { text: 'Layouts' } },
   { path: 'position', component: PositionComponent, data: { text: 'Position' } },
