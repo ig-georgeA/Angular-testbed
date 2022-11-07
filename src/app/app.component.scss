@@ -7,10 +7,6 @@
   align-content: flex-start;
 }
 .navbar {
-  z-index: 1;
-  left: 0;
-  top: 0;
-  position: sticky;
   height: max-content;
   min-width: min-content;
 }
@@ -24,6 +20,7 @@
   min-width: 0;
   min-height: 0;
   flex-grow: 1;
+  flex-basis: 0;
 }
 .icon {
   font-size: 24px;
