@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { PositionComponent } from './position/position.component';
 import { TabLayoutComponent } from './tab-layout/tab-layout.component';
-import { IgxTabsModule, IgxIconModule, IgxCardModule, IgxButtonModule, IgxRippleModule, IgxCalendarModule, IgxInputGroupModule, IgxGridModule, IgxAvatarModule, IgxExpansionPanelModule, IgxListModule, IgxCheckboxModule, IgxAccordionModule, IgxTreeModule, IgxDividerModule, IgxNavigationDrawerModule, IgxActionStripModule, IgxTreeGridModule, IgxDateTimeEditorModule, IgxDatePickerModule, IgxChipsModule, IgxSliderModule, IgxButtonGroupModule, IgxSwitchModule, IgxRadioModule, IgxSelectModule, IgxComboModule, IgxToggleModule, IgxDropDownModule, IgxDialogModule, IgxSnackbarModule, IgxBannerModule, IgxNavbarModule } from '@infragistics/igniteui-angular';
+import { IgxTabsModule, IgxIconModule, IgxCardModule, IgxButtonModule, IgxRippleModule, IgxCalendarModule, IgxInputGroupModule, IgxGridModule, IgxAvatarModule, IgxExpansionPanelModule, IgxListModule, IgxCheckboxModule, IgxAccordionModule, IgxTreeModule, IgxDividerModule, IgxActionStripModule, IgxTreeGridModule, IgxDateTimeEditorModule, IgxDatePickerModule, IgxChipsModule, IgxSliderModule, IgxButtonGroupModule, IgxSwitchModule, IgxRadioModule, IgxSelectModule, IgxComboModule, IgxToggleModule, IgxDropDownModule, IgxDialogModule, IgxSnackbarModule, IgxBannerModule, IgxNavbarModule, IgxNavigationDrawerModule } from '@infragistics/igniteui-angular';
 import { FormsModule } from '@angular/forms';
 import { ExpansionPanelsTreeComponent } from './expansion-panels-tree/expansion-panels-tree.component';
 import { CardCalendarComponent } from './card-calendar/card-calendar.component';
@@ -60,7 +60,6 @@ import { ImageComponent } from './image/image.component';
     IgxAccordionModule,
     IgxTreeModule,
     IgxDividerModule,
-    IgxNavigationDrawerModule,
     IgxActionStripModule,
     IgxTreeGridModule,
     IgxCategoryChartModule,
@@ -79,7 +78,8 @@ import { ImageComponent } from './image/image.component';
     IgxDialogModule,
     IgxSnackbarModule,
     IgxBannerModule,
-    IgxNavbarModule
+    IgxNavbarModule,
+    IgxNavigationDrawerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

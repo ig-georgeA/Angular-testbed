@@ -16,8 +16,52 @@
   </igx-card>
 </div>
 <div class="row-layout group_2">
+  <igx-list class="list">
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="home" [roundShape]="true" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Home</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="business" [roundShape]="true" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Accounts</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="person_outline" [roundShape]="true" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Contacts</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="inbox" [roundShape]="true" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Contracts</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="bar_chart" [roundShape]="true" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Reports</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="calendar_today" [roundShape]="true" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Calendar</span>
+    </igx-list-item>
+    <igx-list-item [isHeader]="false">
+      <span igxListThumbnail>
+        <igx-avatar icon="assignment_turned_in" [roundShape]="true" class="avatar"></igx-avatar>
+      </span>
+      <span igxListLineTitle>Tasks</span>
+    </igx-list-item>
+  </igx-list>
   <div class="column-layout group_3">
-    <igx-list class="list">
+    <igx-list class="list_1">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
           <igx-avatar [src]="item.avatarUrl" size="medium" class="avatar"></igx-avatar>
@@ -33,7 +77,7 @@
     </igx-list>
   </div>
   <div class="column-layout group_3">
-    <igx-list class="list">
+    <igx-list class="list_1">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
           <igx-avatar [src]="item.avatarUrl" size="large" [roundShape]="true" class="avatar"></igx-avatar>
@@ -63,132 +107,4 @@
       </igx-list-item>
     </igx-list>
   </div>
-  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="900" width="256px" class="nav-drawer">
-    <ng-template igxDrawer>
-      <div class="column-layout group_6">
-        <igx-list class="list_1">
-          <igx-list-item [isHeader]="false">
-            <span igxListLine>
-              <div class="row-layout group_7">
-                <img src="/assets/Home Icon.svg" class="image_1" />
-                <p class="igx-typography__body-2 text_2">
-                  Home
-                </p>
-              </div>
-            </span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListLine>
-              <div class="row-layout group_8">
-                <img src="/assets/Accounts Icon.svg" class="image_1" />
-                <p class="igx-typography__body-2 text_2">
-                  Accounts
-                </p>
-              </div>
-            </span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListLine>
-              <div class="row-layout group_8">
-                <img src="/assets/Contacts Icon.svg" class="image_1" />
-                <p class="igx-typography__body-2 text_2">
-                  Contacts
-                </p>
-              </div>
-            </span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListLine>
-              <div class="row-layout group_8">
-                <img src="/assets/Contracts Icon.svg" class="image_1" />
-                <p class="igx-typography__body-2 text_2">
-                  Contracts
-                </p>
-              </div>
-            </span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListLine>
-              <div class="row-layout group_8">
-                <img src="/assets/Reports Icon.svg" class="image_1" />
-                <p class="igx-typography__body-2 text_2">
-                  Reports
-                </p>
-              </div>
-            </span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListLine>
-              <div class="row-layout group_8">
-                <img src="/assets/Calendar Icon.svg" class="image_1" />
-                <p class="igx-typography__body-2 text_2">
-                  Calendar
-                </p>
-              </div>
-            </span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListLine>
-              <div class="row-layout group_8">
-                <img src="/assets/Tasks Icon.svg" class="image_1" />
-                <p class="igx-typography__body-2 text_2">
-                  Tasks
-                </p>
-              </div>
-            </span>
-          </igx-list-item>
-        </igx-list>
-      </div>
-    </ng-template>
-  </igx-nav-drawer>
-  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="900" width="256px" class="nav-drawer">
-    <ng-template igxDrawer>
-      <div class="column-layout group_6">
-        <igx-list class="list_1">
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="home" [roundShape]="true" class="avatar"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Home</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="business" [roundShape]="true" class="avatar"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Accounts</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="perm_identity" [roundShape]="true" class="avatar"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Contacts</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="inbox" [roundShape]="true" class="avatar"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Contracts</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="bar_chart" [roundShape]="true" class="avatar"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Reports</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="calendar_today" [roundShape]="true" class="avatar"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Calendar</span>
-          </igx-list-item>
-          <igx-list-item [isHeader]="false">
-            <span igxListThumbnail>
-              <igx-avatar icon="assignment_turned_in" [roundShape]="true" class="avatar"></igx-avatar>
-            </span>
-            <span igxListLineTitle>Tasks</span>
-          </igx-list-item>
-        </igx-list>
-      </div>
-    </ng-template>
-  </igx-nav-drawer>
 </div>
