@@ -90,10 +90,10 @@
       Country
     </igx-chip>
   </div>
-  <igx-slider [value]="50" [continuous]="true" [disabled]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" [showTicks]="true" class="slider"></igx-slider>
-  <igx-slider [value]="50" [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [secondaryTickLabels]="false" [showTicks]="true" class="slider"></igx-slider>
+  <igx-slider [value]="50" [disabled]="true" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="2" [showTicks]="true" class="slider"></igx-slider>
+  <igx-slider [value]="50" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [secondaryTickLabels]="false" [showTicks]="true" class="slider"></igx-slider>
   <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" class="slider_1"></igx-slider>
-  <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [continuous]="true" [minValue]="0" [maxValue]="100" [primaryTicks]="3" [secondaryTicks]="1" [showTicks]="true" class="slider_2"></igx-slider>
+  <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="1" [showTicks]="true" class="slider_2"></igx-slider>
 </div>
 <div class="column-layout group_1">
   <igx-input-group type="border" class="input">
@@ -132,7 +132,7 @@
     <label igxLabel>Prefix, helptext and border</label>
     <igx-hint>sample hint text</igx-hint>
   </igx-input-group>
-  <igx-date-picker [required]="true" type="border" class="date-picker">
+  <igx-date-picker type="border" class="date-picker">
     <label igxLabel>Date</label>
   </igx-date-picker>
   <igx-input-group type="border" class="input-group">
@@ -178,7 +178,7 @@
         email
       </igx-icon>
     </button>
-    <a href target="_blank" routerLink="/charts" class="igx-typography__body-1 hyperlink">
+    <a target="_blank" routerLink="/charts" class="igx-typography__body-1 hyperlink">
       View charts
     </a>
   </div>
@@ -217,7 +217,7 @@
     </div>
   </div>
   <div class="row-layout group_6">
-    <igx-radio-group value="1" [required]="true" alignment="vertical" class="radio-group">
+    <igx-radio-group alignment="vertical" value="1" [required]="true" class="radio-group">
       <igx-radio value="1" class="radio">
         Label
       </igx-radio>
@@ -253,9 +253,9 @@
     </button>
   </div>
   <div class="row-layout group_8">
-    <igx-avatar initials="GM" [roundShape]="true" class="avatar"></igx-avatar>
-    <igx-avatar [roundShape]="true" class="avatar"></igx-avatar>
-    <igx-avatar icon="people" [roundShape]="true" class="avatar"></igx-avatar>
+    <igx-avatar initials="GM" size="large" [roundShape]="true" class="avatar"></igx-avatar>
+    <igx-avatar src="/assets/Avatar2.png" size="medium" class="avatar"></igx-avatar>
+    <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
   </div>
   <div class="row-layout group_9">
     <igx-icon class="icon_2">

@@ -43,9 +43,11 @@
         Option
       </igx-select-item>
       <label igxLabel>Options</label>
+      <igx-hint>Show help text here</igx-hint>
     </igx-select>
     <igx-select type="box" [disabled]="true" class="user-input">
       <label igxLabel>I have a label</label>
+      <igx-hint>disabled</igx-hint>
     </igx-select>
   </div>
   <div class="column-layout group_1">
@@ -55,7 +57,6 @@
           person
         </igx-icon>
       </igx-prefix>
-      <igx-hint>sample hint text</igx-hint>
       <label igxLabel>Categories</label>
     </igx-combo>
     <igx-combo type="border" placeholder="disabled combo" [disabled]="true" valueKey="categoryID" displayKey="description" [filterable]="true" class="user-input">
@@ -71,7 +72,7 @@
       </igx-suffix>
       <label igxLabel>Description</label>
     </igx-combo>
-    <igx-combo placeholder="Box-style combo" [data]="northwindEmployees" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input">
+    <igx-combo [data]="northwindEmployees" placeholder="Box-style combo" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input">
       <igx-prefix>
         <igx-icon class="icon">
           person
@@ -79,7 +80,7 @@
       </igx-prefix>
       <label igxLabel>Names</label>
     </igx-combo>
-    <igx-combo placeholder="Box-style combo + disabled" [disabled]="true" [data]="northwindEmployees" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input"></igx-combo>
+    <igx-combo [data]="northwindEmployees" placeholder="Box-style combo + disabled" [disabled]="true" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input"></igx-combo>
     <button igxButton="raised" igxRipple [igxToggleAction]="dropdown" class="user-input">
       <span>Dropdown</span>
       <igx-icon>

@@ -97,13 +97,7 @@
     </button>
   </div>
 </div>
-<igx-snackbar actionText="Dismiss" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
-  This is a message
-</igx-snackbar>
 <igx-banner #banner class="banner">
-  <igx-icon class="icon">
-    mail
-  </igx-icon>
   <p>
     Banner message
   </p>
@@ -112,4 +106,10 @@
       Dismiss
     </button>
   </igx-banner-actions>
+  <igx-icon class="icon">
+    mail
+  </igx-icon>
 </igx-banner>
+<igx-snackbar actionText="Dismiss" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
+  This is a message
+</igx-snackbar>

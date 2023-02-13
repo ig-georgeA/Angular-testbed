@@ -103,6 +103,7 @@
 }
 .avatar {
   --background: none;
+  --ig-gray-400: transparent;
 }
 .text {
   height: max-content;
@@ -111,6 +112,7 @@
 .avatar_1 {
   background-color: transparent;
   --background: none;
+  --ig-gray-400: transparent;
 }
 .title-1 {
   text-align: center;
@@ -143,7 +145,7 @@
   padding: 0.0px;
   height: max-content;
 }
-.input-group-1_1 {
+.user-input_1 {
   margin: 0.0px 0.0px 16px;
   padding: 0.0px;
   height: max-content;
@@ -152,12 +154,6 @@
   margin: 0.0px;
   padding: 0.0px;
   width: max-content;
-  height: max-content;
-}
-.button-1 {
-  color: hsla(var(--igx-primary-500));
-  margin: 0.0px 0.0px 16px;
-  padding: 0.0px;
   height: max-content;
 }
 .list {

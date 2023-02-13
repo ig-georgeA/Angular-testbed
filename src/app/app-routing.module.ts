@@ -12,6 +12,7 @@ import { CardCalendarComponent } from './card-calendar/card-calendar.component';
 import { ListsDataComponent } from './lists-data/lists-data.component';
 import { DataGridLayoutsComponent } from './data-grid-layouts/data-grid-layouts.component';
 import { TreeGridComponent } from './tree-grid/tree-grid.component';
+import { PivotGridComponent } from './pivot-grid/pivot-grid.component';
 import { ChartsComponent } from './charts/charts.component';
 import { TypeScaleComponent } from './type-scale/type-scale.component';
 import { InputsComponent } from './inputs/inputs.component';
@@ -30,6 +31,7 @@ export const routes: Routes = [
   { path: 'lists-data', component: ListsDataComponent, data: { text: 'Lists + data' } },
   { path: 'data-grid-layouts', component: DataGridLayoutsComponent, data: { text: 'Data-grid layouts' } },
   { path: 'tree-grid', component: TreeGridComponent, data: { text: 'Tree grid' } },
+  { path: 'pivot-grid', component: PivotGridComponent, data: { text: 'Pivot grid' } },
   { path: 'charts', component: ChartsComponent, data: { text: 'Charts' } },
   { path: 'type-scale', component: TypeScaleComponent, data: { text: 'Type + scale' } },
   { path: 'inputs', component: InputsComponent, data: { text: 'Inputs' } },
