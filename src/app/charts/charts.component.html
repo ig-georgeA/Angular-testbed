@@ -1,5 +1,5 @@
 <div class="column-layout group">
-  <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="column" chartTitle="Column" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+  <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="column" chartTitle="Column" includedProperties="Franchise,TotalWorldBoxOfficeRevenue,HighestGrossingMovieInSeries" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
 </div>
 <div class="column-layout group">
   <igx-category-chart [dataSource]="financialBoxOfficeRevenue" chartType="area" chartTitle="Area" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
@@ -29,7 +29,7 @@
   <h6 class="h6">
     Pie chart with start angle 270deg
   </h6>
-  <igx-pie-chart [dataSource]="financialGlobalElectricityDemand" labelsPosition="bestFit" startAngle="270" labelMemberPath="Label" valueMemberPath="Value" class="pie-chart"></igx-pie-chart>
+  <igx-pie-chart [dataSource]="financialGlobalElectricityDemand" startAngle="270" labelMemberPath="Label" valueMemberPath="Value" class="pie-chart"></igx-pie-chart>
 </div>
 <div class="column-layout group_1">
   <h6 class="h6">

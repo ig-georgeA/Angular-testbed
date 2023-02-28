@@ -65,6 +65,11 @@
   width: 24px;
   height: 24px;
 }
+.banner {
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
+}
 .snackbar {
   z-index: 1;
   right: -11.484375px;
@@ -72,9 +77,4 @@
   position: fixed;
   height: max-content;
   min-width: min-content;
-}
-.banner {
-  height: max-content;
-  min-width: min-content;
-  flex-shrink: 0;
 }
