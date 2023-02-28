@@ -41,7 +41,7 @@
         <button igxButton="flat" igxRipple [igxToggleAction]="alert">OK</button>
       </igx-dialog-actions>
     </igx-dialog>
-    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog>
+    <igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog1>
       <igx-dialog-title>
         <h5>
           Confirmation
@@ -51,8 +51,8 @@
         <p>Are you sure you want to do this?</p>
       </ng-container>
       <igx-dialog-actions>
-        <button igxButton="flat" igxRipple [igxToggleAction]="dialog">Cancel</button>
-        <button igxButton="flat" igxRipple [igxToggleAction]="dialog">OK</button>
+        <button igxButton="flat" igxRipple [igxToggleAction]="dialog1">Cancel</button>
+        <button igxButton="flat" igxRipple [igxToggleAction]="dialog1">OK</button>
       </igx-dialog-actions>
     </igx-dialog>
   </div>
@@ -97,13 +97,7 @@
     </button>
   </div>
 </div>
-<igx-snackbar actionText="Dismiss" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
-  This is a message
-</igx-snackbar>
 <igx-banner #banner class="banner">
-  <igx-icon class="icon">
-    mail
-  </igx-icon>
   <p>
     Banner message
   </p>
@@ -112,4 +106,10 @@
       Dismiss
     </button>
   </igx-banner-actions>
+  <igx-icon class="icon">
+    mail
+  </igx-icon>
 </igx-banner>
+<igx-snackbar actionText="Dismiss" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
+  This is a message
+</igx-snackbar>

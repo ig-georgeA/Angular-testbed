@@ -6,24 +6,24 @@
       </igx-icon>
     </button>
   </igx-navbar-action>
-  <ng-container>
-    <button igxButton="icon" igxRipple>
-      <igx-icon>
-        search
-      </igx-icon>
-    </button>
-    <button igxButton="icon" igxRipple>
-      <igx-icon>
-        favorite
-      </igx-icon>
-    </button>
-    <button igxButton="icon" igxRipple>
-      <igx-icon>
-        more_vert
-      </igx-icon>
-    </button>
-  </ng-container>
-  <igx-navbar-title>Testing Samples</igx-navbar-title>
+  <button igxButton="icon" igxRipple>
+    <igx-icon>
+      search
+    </igx-icon>
+  </button>
+  <button igxButton="icon" igxRipple>
+    <igx-icon>
+      favorite
+    </igx-icon>
+  </button>
+  <button igxButton="icon" igxRipple>
+    <igx-icon>
+      more_vert
+    </igx-icon>
+  </button>
+  <igx-navbar-title>
+    Testing samples
+  </igx-navbar-title>
 </igx-navbar>
 <div class="row-layout group">
   <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1200" width="320px" #navDrawer class="nav-drawer">
@@ -82,6 +82,12 @@
         </igx-icon>
         <span>Tree grid</span>
       </div>
+      <div igxDrawerItem igxRipple routerLink="/pivot-grid">
+        <igx-icon class="icon">
+          grid_on
+        </igx-icon>
+        <span>Pivot grid</span>
+      </div>
       <div igxDrawerItem igxRipple routerLink="/charts">
         <igx-icon class="icon">
           insert_chart_outlined
@@ -136,9 +142,29 @@
         </igx-icon>
         <span>Show/hide interacitons</span>
       </div>
+      <button igxButton="raised" igxRipple [igxToggleAction]="dialog" class="button">
+        <igx-icon>
+          open_in_new
+        </igx-icon>
+        <span>Open custom dialog</span>
+      </button>
     </ng-template>
   </igx-nav-drawer>
   <div class="view-container">
     <router-outlet></router-outlet>
   </div>
 </div>
+<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog>
+  <igx-dialog-title>
+    <h5>
+      Confirmation
+    </h5>
+  </igx-dialog-title>
+  <ng-container>
+    <p>Are you sure you want to do this?</p>
+  </ng-container>
+  <igx-dialog-actions>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">Cancel</button>
+    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">OK</button>
+  </igx-dialog-actions>
+</igx-dialog>

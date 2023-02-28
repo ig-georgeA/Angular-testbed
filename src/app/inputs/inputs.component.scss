@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
+  overflow: auto;
 }
 .column-layout {
   display: flex;
@@ -231,6 +232,7 @@
   min-width: min-content;
 }
 .hyperlink {
+  cursor: pointer;
   height: max-content;
   min-width: min-content;
   flex-shrink: 0;
@@ -239,6 +241,13 @@
   color: hsla(var(--igx-surface-500));
   background-color: hsla(var(--igx-secondary-200));
   --background: none;
+  --ig-gray-400: transparent;
+}
+.avatar_1 {
+  color: hsla(var(--igx-surface-500));
+  background-color: hsla(var(--igx-primary-500));
+  --background: none;
+  --ig-gray-400: transparent;
 }
 .icon_2 {
   font-size: 18px;
