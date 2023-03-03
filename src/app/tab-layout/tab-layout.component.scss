@@ -51,6 +51,7 @@
   flex-shrink: 0;
 }
 .group_2 {
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
@@ -61,6 +62,7 @@
   flex-shrink: 0;
 }
 .group_3 {
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -123,7 +125,6 @@
   align-items: stretch;
   align-content: flex-start;
   gap: 16px;
-  overflow: auto;
   padding: 16px;
   height: 100%;
   min-width: 100%;
@@ -141,17 +142,12 @@
   min-width: 100%;
   min-height: 50px;
 }
-.button {
-  height: max-content;
-  min-width: min-content;
+.icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
 }
-.input {
-  height: max-content;
-  min-width: min-content;
-  flex-shrink: 0;
-}
-.button_1 {
-  color: hsla(var(--igx-surface-500));
+.text {
   height: max-content;
   min-width: min-content;
 }
@@ -160,21 +156,25 @@
   height: max-content;
   flex-shrink: 0;
 }
-.icon {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-}
 .image {
   height: 100%;
 }
-.grid {
-  min-width: 600px;
-  min-height: 300px;
+.button {
+  height: max-content;
+  min-width: min-content;
+}
+.input {
+  height: max-content;
+  min-width: min-content;
   flex-grow: 1;
   flex-shrink: 0;
 }
-.grid_1 {
+.button_1 {
+  color: hsla(var(--igx-surface-500));
+  height: max-content;
+  min-width: min-content;
+}
+.grid {
   min-width: 600px;
   min-height: 300px;
   flex-grow: 1;
