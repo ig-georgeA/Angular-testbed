@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import { IgxCardModule, IgxButtonModule, IgxRippleModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxIconModule } from '@infragistics/igniteui-angular';
 import { ImageComponent } from './image.component';
 
 describe('ImageComponent', () => {
@@ -11,7 +12,7 @@ describe('ImageComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ ImageComponent ],
-      imports: [ NoopAnimationsModule, FormsModule ]
+      imports: [ NoopAnimationsModule, FormsModule, IgxCardModule, IgxButtonModule, IgxRippleModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxButtonModule, IgxRippleModule, IgxIconModule ]
     })
     .compileComponents();
   });

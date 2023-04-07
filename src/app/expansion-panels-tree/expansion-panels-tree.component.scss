@@ -10,8 +10,8 @@
   flex-direction: column;
 }
 .group {
-  background-color: hsla(var(--igx-surface-500));
-  border-color: hsla(var(--igx-grays-500));
+  background-color: hsla(var(--ig-surface-500));
+  border-color: hsla(var(--ig-gray-500));
   border-width: 0px 1px 0px 0px;
   border-style: solid;
   justify-content: flex-start;
@@ -49,7 +49,7 @@
   display: flex;
 }
 .row-layout-1 {
-  background-color: hsla(var(--igx-surface-500));
+  background-color: hsla(var(--ig-surface-500));
   justify-content: center;
   align-items: center;
   align-content: flex-start;
@@ -60,8 +60,8 @@
   flex-basis: 0;
 }
 .column-layout-1 {
-  background-color: hsla(var(--igx-surface-500));
-  border-color: hsla(var(--igx-grays-400));
+  background-color: hsla(var(--ig-surface-500));
+  border-color: hsla(var(--ig-gray-400));
   border-width: 2px;
   border-style: solid;
   justify-content: flex-start;
@@ -95,6 +95,7 @@
 }
 .accordion {
   overflow-y: auto;
+  height: max-content;
   flex-shrink: 0;
 }
 .actions-content {
@@ -110,7 +111,7 @@
   min-width: min-content;
 }
 .avatar_1 {
-  background-color: transparent;
+  --igx-avatar-background: transparent;
   --background: none;
   --ig-gray-400: transparent;
 }
@@ -121,6 +122,7 @@
   height: max-content;
 }
 .hyperlink {
+  color: hsla(var(--ig-info-500));
   height: max-content;
   min-width: min-content;
   flex-shrink: 0;
@@ -138,7 +140,6 @@
 }
 .button {
   height: max-content;
-  min-width: min-content;
 }
 .user-input {
   margin: 0.0px 0.0px 16.0px;

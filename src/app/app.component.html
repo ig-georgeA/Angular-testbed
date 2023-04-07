@@ -142,7 +142,7 @@
         </igx-icon>
         <span>Show/hide interacitons</span>
       </div>
-      <button igxButton="raised" igxRipple [igxToggleAction]="dialog" class="button">
+      <button igxButton="raised" igxRipple class="button">
         <igx-icon>
           open_in_new
         </igx-icon>
@@ -154,17 +154,3 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog>
-  <igx-dialog-title>
-    <h5>
-      Confirmation
-    </h5>
-  </igx-dialog-title>
-  <ng-container>
-    <p>Are you sure you want to do this?</p>
-  </ng-container>
-  <igx-dialog-actions>
-    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">Cancel</button>
-    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">OK</button>
-  </igx-dialog-actions>
-</igx-dialog>
