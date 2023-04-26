@@ -1,24 +1,25 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { IgxGridModule, IgxActionStripModule } from '@infragistics/igniteui-angular';
-import { DataGridLayoutsComponent } from './data-grid-layouts.component';
+import { GridCRUDComponent } from './grid-crud.component';
 
-describe('DataGridLayoutsComponent', () => {
-  let component: DataGridLayoutsComponent;
-  let fixture: ComponentFixture<DataGridLayoutsComponent>;
+describe('GridCRUDComponent', () => {
+  let component: GridCRUDComponent;
+  let fixture: ComponentFixture<GridCRUDComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DataGridLayoutsComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxGridModule, IgxActionStripModule ]
+      declarations: [ GridCRUDComponent ],
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxGridModule, IgxActionStripModule ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataGridLayoutsComponent);
+    fixture = TestBed.createComponent(GridCRUDComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

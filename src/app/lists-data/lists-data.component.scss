@@ -77,6 +77,13 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+.actions-content {
+  min-width: 50px;
+  min-height: 40px;
+}
+.button {
+  height: max-content;
+}
 .image {
   height: 100%;
 }

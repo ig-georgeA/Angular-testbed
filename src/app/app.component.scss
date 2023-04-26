@@ -22,9 +22,14 @@
   min-height: 0;
   flex-grow: 1;
 }
+.navbar-content {
+  gap: 1rem;
+}
 .button {
   height: max-content;
-  min-width: min-content;
+}
+.h6 {
+  margin: 0;
 }
 .icon {
   font-size: 24px;

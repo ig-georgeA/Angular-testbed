@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
+import { IgxSelectModule, IgxInputGroupModule, IgxIconModule, IgxComboModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxDropDownModule } from '@infragistics/igniteui-angular';
 import { PickersComboComponent } from './pickers-combo.component';
 
 describe('PickersComboComponent', () => {
@@ -11,7 +12,7 @@ describe('PickersComboComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ PickersComboComponent ],
-      imports: [ NoopAnimationsModule, FormsModule ]
+      imports: [ NoopAnimationsModule, FormsModule, IgxSelectModule, IgxInputGroupModule, IgxIconModule, IgxComboModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxDropDownModule ]
     })
     .compileComponents();
   });
