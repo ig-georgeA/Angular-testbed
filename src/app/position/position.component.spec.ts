@@ -11,9 +11,7 @@ describe('PositionComponent', () => {
       declarations: [ PositionComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(PositionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

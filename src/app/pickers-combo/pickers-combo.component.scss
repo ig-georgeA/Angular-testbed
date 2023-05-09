@@ -34,6 +34,10 @@
   height: max-content;
   min-width: min-content;
 }
+.button {
+  margin: 16px;
+  height: max-content;
+}
 .dropdown {
   left: 33px;
   top: 0;
@@ -51,5 +55,5 @@
   font-size: 24px;
   width: 24px;
   height: 24px;
-  color: hsla(var(--igx-warn-500));
+  color: hsla(var(--ig-warn-500));
 }

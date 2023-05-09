@@ -15,6 +15,7 @@
       <igx-select-item value="Option">
         Option
       </igx-select-item>
+      <label igxLabel>Label/Placeholder</label>
     </igx-select>
     <igx-select type="border" placeholder="pick a value" class="user-input">
       <igx-select-item value="Option">
@@ -26,6 +27,7 @@
       <igx-select-item value="Option">
         Web
       </igx-select-item>
+      <label igxLabel>Label/Placeholder</label>
     </igx-select>
     <igx-select type="border" placeholder="Select a value" class="user-input">
       <igx-suffix>
@@ -51,7 +53,7 @@
     </igx-select>
   </div>
   <div class="column-layout group_1">
-    <igx-combo type="border" placeholder="no label + placeholder" valueKey="categoryID" displayKey="name" [filterable]="true" [autoFocusSearch]="true" class="user-input">
+    <igx-combo type="border" [data]="iGNorthwindAPICustomerInputModel" placeholder="no label + placeholder" valueKey="customerId" displayKey="contactName" [filterable]="true" [autoFocusSearch]="true" class="user-input">
       <igx-prefix>
         <igx-icon class="icon">
           person
@@ -81,7 +83,7 @@
       <label igxLabel>Names</label>
     </igx-combo>
     <igx-combo [data]="northwindEmployees" placeholder="Box-style combo + disabled" [disabled]="true" valueKey="employeeID" displayKey="firstName" [filterable]="true" [autoFocusSearch]="true" class="user-input"></igx-combo>
-    <button igxButton="raised" igxRipple [igxToggleAction]="dropdown" class="user-input">
+    <button igxButton="raised" igxRipple [igxToggleAction]="dropdown" class="button">
       <span>Dropdown</span>
       <igx-icon>
         keyboard_arrow_down

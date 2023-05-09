@@ -33,8 +33,8 @@
   display: flex;
 }
 .group_1 {
-  background-color: hsla(var(--igx-grays-400));
-  border-color: hsla(var(--igx-primary-400));
+  background-color: hsla(var(--ig-gray-400));
+  border-color: hsla(var(--ig-primary-400));
   border-style: solid;
   justify-content: flex-start;
   align-items: stretch;
@@ -53,24 +53,12 @@
 .group_2 {
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 16px;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-  flex-shrink: 0;
-}
-.group_3 {
-  flex-wrap: wrap;
-  justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
   gap: 16px;
   position: relative;
   min-width: 50px;
   min-height: 50px;
-  flex-grow: 1;
   flex-shrink: 0;
 }
 .card_1 {
@@ -78,7 +66,7 @@
   min-width: 320px;
   flex-shrink: 0;
 }
-.group_4 {
+.group_3 {
   flex-grow: 1;
 }
 .tab-item-content {
@@ -112,10 +100,6 @@
   min-width: 100%;
   min-height: 50px;
 }
-.body-content {
-  min-width: 50px;
-  min-height: 50px;
-}
 .actions-content {
   min-width: 50px;
   min-height: 40px;
@@ -142,26 +126,19 @@
   min-width: 100%;
   min-height: 50px;
 }
-.icon {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
-}
-.text {
-  height: max-content;
-  min-width: min-content;
-}
-.calendar {
-  width: max-content;
-  height: max-content;
-  flex-shrink: 0;
-}
-.image {
+.tab-item-content_5 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: auto;
+  padding: 32px;
   height: 100%;
+  min-width: 100%;
+  min-height: 50px;
 }
 .button {
   height: max-content;
-  min-width: min-content;
 }
 .input {
   height: max-content;
@@ -170,12 +147,31 @@
   flex-shrink: 0;
 }
 .button_1 {
-  color: hsla(var(--igx-surface-500));
+  --igx-button-foreground: hsla(var(--ig-surface-500));
   height: max-content;
-  min-width: min-content;
+  align-self: flex-start;
+}
+.calendar {
+  width: max-content;
+  height: max-content;
+  flex-shrink: 0;
+}
+.icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.image {
+  height: 100%;
 }
 .grid {
   min-width: 600px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.category-chart {
+  min-width: 400px;
   min-height: 300px;
   flex-grow: 1;
   flex-basis: 0;

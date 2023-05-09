@@ -9,6 +9,11 @@
           {{ item.title }}
         </h5>
       </igx-card-header>
+      <igx-card-actions class="actions-content">
+        <button igxButton="flat" igxRipple routerLink="/layouts" class="button">
+          Details
+        </button>
+      </igx-card-actions>
     </div>
     <igx-card-media width="100px">
       <img [src]="item.avatarUrl" class="image" />
@@ -87,18 +92,18 @@
         <span igxListLine>
           <div class="row-layout group_4">
             <div class="column-layout group_5">
-              <p class="igx-typography__caption text">
+              <p class="ig-typography__caption text">
                 Birthday
               </p>
-              <p class="igx-typography__caption text_1">
+              <p class="ig-typography__caption text_1">
                 {{ item.birthDate }}
               </p>
             </div>
             <div class="column-layout group_5">
-              <p class="igx-typography__caption text">
+              <p class="ig-typography__caption text">
                 Country
               </p>
-              <p class="igx-typography__caption text_1">
+              <p class="ig-typography__caption text_1">
                 {{ item.address.country }}
               </p>
             </div>

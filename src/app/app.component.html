@@ -6,6 +6,11 @@
       </igx-icon>
     </button>
   </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      Testing samples
+    </h6>
+  </igx-navbar-title>
   <button igxButton="icon" igxRipple>
     <igx-icon>
       search
@@ -21,9 +26,6 @@
       more_vert
     </igx-icon>
   </button>
-  <igx-navbar-title>
-    Testing samples
-  </igx-navbar-title>
 </igx-navbar>
 <div class="row-layout group">
   <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="1200" width="320px" #navDrawer class="nav-drawer">
@@ -70,17 +72,17 @@
         </igx-icon>
         <span>List + data</span>
       </div>
-      <div igxDrawerItem igxRipple routerLink="/data-grid-layouts">
+      <div igxDrawerItem igxRipple routerLink="/grid-and-tree-grid">
         <igx-icon class="icon">
           table_chart
         </igx-icon>
-        <span>Data grid</span>
+        <span>Grid and Tree grid</span>
       </div>
-      <div igxDrawerItem igxRipple routerLink="/tree-grid">
+      <div igxDrawerItem igxRipple routerLink="/grid-crud">
         <igx-icon class="icon">
-          grid_on
+          table_chart
         </igx-icon>
-        <span>Tree grid</span>
+        <span>Grid CRUD</span>
       </div>
       <div igxDrawerItem igxRipple routerLink="/pivot-grid">
         <igx-icon class="icon">
@@ -142,7 +144,7 @@
         </igx-icon>
         <span>Show/hide interacitons</span>
       </div>
-      <button igxButton="raised" igxRipple [igxToggleAction]="dialog" class="button">
+      <button igxButton="raised" igxRipple class="button">
         <igx-icon>
           open_in_new
         </igx-icon>
@@ -154,17 +156,3 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-<igx-dialog [closeOnOutsideSelect]="true" [closeOnEscape]="true" #dialog>
-  <igx-dialog-title>
-    <h5>
-      Confirmation
-    </h5>
-  </igx-dialog-title>
-  <ng-container>
-    <p>Are you sure you want to do this?</p>
-  </ng-container>
-  <igx-dialog-actions>
-    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">Cancel</button>
-    <button igxButton="flat" igxRipple [igxToggleAction]="dialog">OK</button>
-  </igx-dialog-actions>
-</igx-dialog>
