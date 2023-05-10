@@ -114,12 +114,10 @@
     </igx-card-actions>
   </igx-card>
   <igx-card [horizontal]="true" class="card-3">
-    <div>
+    <div class="group_2">
       <div class="row-layout">
         <igx-card-header>
-          <div igxCardThumbnail>
-            <igx-avatar src="https://www.infragistics.com/angular-demos/assets/images/card/media/ROZES-Under-the-Grave.jpg" size="medium" class="avatar-3"></igx-avatar>
-          </div>
+          <div igxCardThumbnail></div>
           <h3 igxCardHeaderTitle>
             Rozes
           </h3>
@@ -130,14 +128,14 @@
       </div>
       <igx-card-content class="body-content">
         <div class="column-layout column-layout-1">
-          <p class="igx-typography__body-2 text-1">
+          <p class="ig-typography__body-2 text-1">
             As I have always said: I write what’s real and what’s true, even if it means throwing myself under the bus....
           </p>
         </div>
       </igx-card-content>
     </div>
     <igx-divider [vertical]="true"></igx-divider>
-    <igx-card-actions [vertical]="true" class="actions-content">
+    <igx-card-actions [vertical]="true" class="igx-card-actions--justify actions-content_1">
       <button igxButton="icon" igxRipple class="icon-button-2">
         <igx-icon>
           favorite
@@ -167,7 +165,6 @@
         Subtitle goes here...
       </h5>
     </igx-card-header>
-    <igx-card-content class="body-content"></igx-card-content>
     <igx-card-actions class="actions-content">
       <button igxButton="flat" igxRipple class="button">
         Button
@@ -190,7 +187,7 @@
     </igx-card-actions>
   </igx-card>
 </div>
-<div class="row-layout group_2">
+<div class="row-layout group_3">
   <igx-calendar [weekStart]="2" [hasHeader]="false" [vertical]="false" class="calendar"></igx-calendar>
   <igx-calendar [value]="date" [hasHeader]="true" [vertical]="false" class="calendar"></igx-calendar>
   <igx-calendar [showWeekNumbers]="true" [monthsViewNumber]="2" [hasHeader]="true" [vertical]="false" class="calendar"></igx-calendar>

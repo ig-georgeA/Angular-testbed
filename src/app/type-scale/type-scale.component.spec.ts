@@ -11,9 +11,7 @@ describe('TypeScaleComponent', () => {
       declarations: [ TypeScaleComponent ]
     })
     .compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(TypeScaleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

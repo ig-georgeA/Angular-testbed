@@ -10,8 +10,8 @@ import { TabLayoutComponent } from './tab-layout/tab-layout.component';
 import { ExpansionPanelsTreeComponent } from './expansion-panels-tree/expansion-panels-tree.component';
 import { CardCalendarComponent } from './card-calendar/card-calendar.component';
 import { ListsDataComponent } from './lists-data/lists-data.component';
-import { DataGridLayoutsComponent } from './data-grid-layouts/data-grid-layouts.component';
-import { TreeGridComponent } from './tree-grid/tree-grid.component';
+import { GridAndTreeGridComponent } from './grid-and-tree-grid/grid-and-tree-grid.component';
+import { GridCRUDComponent } from './grid-crud/grid-crud.component';
 import { PivotGridComponent } from './pivot-grid/pivot-grid.component';
 import { ChartsComponent } from './charts/charts.component';
 import { TypeScaleComponent } from './type-scale/type-scale.component';
@@ -23,14 +23,14 @@ import { ImageComponent } from './image/image.component';
 export const routes: Routes = [
   { path: '', redirectTo: 'layouts', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
-  { path: 'layouts', component: LayoutsComponent, data: { text: 'Layouts' } },
+  { path: '', redirectTo: 'layouts', pathMatch: 'full' }, { path: 'layouts', component: LayoutsComponent, data: { text: 'Layouts' } },
   { path: 'position', component: PositionComponent, data: { text: 'Position' } },
   { path: 'tab-layout', component: TabLayoutComponent, data: { text: 'Tab layout' } },
   { path: 'expansion-panels-tree', component: ExpansionPanelsTreeComponent, data: { text: 'Expansion panels-tree' } },
   { path: 'card-calendar', component: CardCalendarComponent, data: { text: 'Card +Calendar' } },
   { path: 'lists-data', component: ListsDataComponent, data: { text: 'Lists + data' } },
-  { path: 'data-grid-layouts', component: DataGridLayoutsComponent, data: { text: 'Data-grid layouts' } },
-  { path: 'tree-grid', component: TreeGridComponent, data: { text: 'Tree grid' } },
+  { path: 'grid-and-tree-grid', component: GridAndTreeGridComponent, data: { text: 'Grid and Tree-grid' } },
+  { path: 'grid-crud', component: GridCRUDComponent, data: { text: 'Grid CRUD' } },
   { path: 'pivot-grid', component: PivotGridComponent, data: { text: 'Pivot grid' } },
   { path: 'charts', component: ChartsComponent, data: { text: 'Charts' } },
   { path: 'type-scale', component: TypeScaleComponent, data: { text: 'Type + scale' } },
