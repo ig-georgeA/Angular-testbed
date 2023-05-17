@@ -24,19 +24,22 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
+  gap: 32px;
   padding: 16px;
   width: 500px;
   min-width: 50px;
   min-height: 50px;
 }
 .user-input {
-  margin: 16px;
   height: max-content;
   min-width: min-content;
 }
 .button {
-  margin: 16px;
   height: max-content;
+}
+.date-picker {
+  height: max-content;
+  min-width: 120px;
 }
 .dropdown {
   left: 33px;

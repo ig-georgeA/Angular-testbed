@@ -44,7 +44,7 @@ export class GridCRUDComponent implements OnInit {
   }
 
   public customerRowDeleted(args: IRowDataEventArgs) {
-    this.iGNorthwindAPIService.deleteCustomerInputModel(args.data.customerId).subscribe({
+    this.iGNorthwindAPIService.deleteCustomerInputModel(args.primaryKey).subscribe({
       next: (_e) => {
         this.iGNorthwindAPIService.getCustomerInputModel().subscribe(data => this.iGNorthwindAPICustomerInputModel = data);
       },

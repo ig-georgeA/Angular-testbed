@@ -20,24 +20,28 @@
       <img src="https://static.infragistics.com/marketing/Website/General/Infragistics-horizontal.svg" class="image_3" />
     </igx-card-content>
     <igx-card-actions class="actions-content">
-      <button igxButton="flat" igxRipple class="button">
-        Button
-      </button>
-      <button igxButton="icon" igxRipple>
-        <igx-icon>
-          favorite
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple>
-        <igx-icon>
-          bookmark
-        </igx-icon>
-      </button>
-      <button igxButton="icon" igxRipple>
-        <igx-icon>
-          share
-        </igx-icon>
-      </button>
+      <ng-container igxStart>
+        <button igxButton="flat" igxRipple class="button">
+          Button
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxButton="icon" igxRipple>
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple>
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxButton="icon" igxRipple>
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
     </igx-card-actions>
   </igx-card>
   <img class="image_4" />

@@ -95,9 +95,9 @@
   <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" class="slider"></igx-slider>
   <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="1" [showTicks]="true" class="slider"></igx-slider>
   <div class="row-layout group_1">
-    <igx-avatar initials="GM" size="large" [roundShape]="true" class="avatar"></igx-avatar>
+    <igx-avatar initials="GM" size="large" shape="circle" class="avatar"></igx-avatar>
     <igx-avatar src="/assets/Avatar2.png" size="medium" class="avatar"></igx-avatar>
-    <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
+    <igx-avatar icon="people" shape="circle" class="avatar_1"></igx-avatar>
   </div>
 </div>
 <div class="column-layout group_2">
@@ -146,7 +146,7 @@
   </igx-input-group>
   <igx-input-group type="border" class="input-group">
     <label igxLabel for="inputField">Date</label>
-    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
+    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [(ngModel)]="date2" />
   </igx-input-group>
   <div class="row-layout group_3">
     <button igxButton="outlined" igxRipple class="button">
@@ -234,7 +234,7 @@
         Label
       </igx-radio>
     </igx-radio-group>
-    <igx-radio-group [disabled]="true" value="1" [required]="true" class="user-input_1">
+    <igx-radio-group value="1" [required]="true" class="user-input_1">
       <igx-radio value="1" class="radio">
         Label
       </igx-radio>
