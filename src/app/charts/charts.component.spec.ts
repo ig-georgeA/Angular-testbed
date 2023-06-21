@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxCategoryChartModule, IgxPieChartModule } from 'igniteui-angular-core';
+import { IgxCategoryChartModule, IgxPieChartModule } from 'igniteui-angular-charts';
 import { ChartsComponent } from './charts.component';
 
 describe('ChartsComponent', () => {
@@ -12,7 +13,7 @@ describe('ChartsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ ChartsComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxCategoryChartModule, IgxPieChartModule ]
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxCategoryChartModule, IgxPieChartModule ]
     })
     .compileComponents();
   });

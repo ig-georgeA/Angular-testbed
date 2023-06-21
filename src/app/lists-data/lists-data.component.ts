@@ -15,6 +15,6 @@ export class ListsDataComponent implements OnInit {
 
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
-    this.northwindService.getData('Employees').subscribe(data => this.northwindEmployees = data);
+    this.northwindService.getData('EmployeesType').subscribe(data => this.northwindEmployees = data);
   }
 }

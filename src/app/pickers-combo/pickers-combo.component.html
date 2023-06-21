@@ -17,14 +17,14 @@
       </igx-select-item>
       <label igxLabel>Label/Placeholder</label>
     </igx-select>
-    <igx-select type="border" placeholder="pick a value" class="user-input">
-      <igx-select-item value="Option">
+    <igx-select type="border" placeholder="pick a value" value="3" class="user-input">
+      <igx-select-item value="1">
         Android
       </igx-select-item>
-      <igx-select-item value="Option">
+      <igx-select-item value="2">
         iOS
       </igx-select-item>
-      <igx-select-item value="Option">
+      <igx-select-item value="3">
         Web
       </igx-select-item>
       <label igxLabel>Label/Placeholder</label>
@@ -53,7 +53,7 @@
     </igx-select>
   </div>
   <div class="column-layout group_1">
-    <igx-combo type="border" [data]="iGNorthwindAPICustomerInputModel" placeholder="no label + placeholder" valueKey="customerId" displayKey="contactName" [filterable]="true" [autoFocusSearch]="true" class="user-input">
+    <igx-combo type="border" [data]="northwindCustomers" placeholder="no label + placeholder" valueKey="customerID" displayKey="customerID" [filterable]="true" [autoFocusSearch]="true" class="user-input">
       <igx-prefix>
         <igx-icon class="icon">
           person
@@ -61,7 +61,7 @@
       </igx-prefix>
       <label igxLabel>Categories</label>
     </igx-combo>
-    <igx-combo type="border" placeholder="disabled combo" [disabled]="true" valueKey="categoryID" displayKey="description" [filterable]="true" class="user-input">
+    <igx-combo type="border" [data]="northwindCustomers" placeholder="disabled combo" [disabled]="true" valueKey="customerID" displayKey="customerID" [filterable]="true" class="user-input">
       <igx-prefix>
         <igx-icon class="icon">
           person
@@ -89,6 +89,9 @@
         keyboard_arrow_down
       </igx-icon>
     </button>
+    <igx-date-picker type="border" mode="dialog" [(ngModel)]="date" class="date-picker">
+      <label igxLabel>Date</label>
+    </igx-date-picker>
     <igx-drop-down #dropdown class="dropdown">
       <igx-drop-down-item>
         Option

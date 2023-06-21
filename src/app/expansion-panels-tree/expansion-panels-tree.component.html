@@ -2,7 +2,7 @@
   <igx-card type="outlined" class="card">
     <igx-card-header>
       <div igxCardThumbnail>
-        <igx-avatar src="/assets/Avatar9.png" size="medium" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar src="/assets/Avatar9.png" size="medium" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </div>
       <h3 igxCardHeaderTitle>
         FirstName LastName
@@ -11,17 +11,19 @@
         myemail@email.com
       </h5>
     </igx-card-header>
-    <igx-card-actions [reverse]="true" class="actions-content">
-      <button igxButton="flat" igxRipple class="button">
-        <igx-icon>
-          exit_to_app
-        </igx-icon>
-        <span>Sign out</span>
-      </button>
+    <igx-card-actions class="actions-content">
+      <ng-container igxEnd>
+        <button igxButton="flat" igxRipple class="button">
+          <igx-icon>
+            exit_to_app
+          </igx-icon>
+          <span>Sign out</span>
+        </button>
+      </ng-container>
     </igx-card-actions>
   </igx-card>
   <div class="column-layout group_1">
-    <igx-avatar icon="people" [roundShape]="true" class="avatar"></igx-avatar>
+    <igx-avatar icon="people" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
     <p class="ig-typography__subtitle-2 text">
       Firname LastName
     </p>
@@ -34,19 +36,19 @@
       <igx-list class="list">
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="folder" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Title goes here</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="folder" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Title goes here</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="folder" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="folder" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Title goes here</span>
         </igx-list-item>
@@ -61,25 +63,25 @@
       <igx-list class="list">
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="person" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="person" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>User profile</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="assessment" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="assessment" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Analytics</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="book" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="book" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Favorites</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="people" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Shared with others</span>
         </igx-list-item>
@@ -94,25 +96,25 @@
       <igx-list class="list">
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="palette" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="palette" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Theme</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="vpn_key" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="vpn_key" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Change password</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="call_split" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="call_split" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Mail rules</span>
         </igx-list-item>
         <igx-list-item [isHeader]="false">
           <span igxListThumbnail>
-            <igx-avatar icon="forum" [roundShape]="true" class="avatar_1"></igx-avatar>
+            <igx-avatar icon="forum" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
           </span>
           <span igxListLineTitle>Chat preferences</span>
         </igx-list-item>

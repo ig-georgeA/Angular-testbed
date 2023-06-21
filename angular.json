@@ -126,7 +126,6 @@
       }
     }
   },
-  "defaultProject": "component-test-app-scenarios",
   "cli": {
     "schematicCollections": ["@angular-eslint/schematics"]
   }

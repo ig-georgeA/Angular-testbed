@@ -10,9 +10,11 @@
         </h5>
       </igx-card-header>
       <igx-card-actions class="actions-content">
-        <button igxButton="flat" igxRipple routerLink="/layouts" class="button">
-          Details
-        </button>
+        <ng-container igxStart>
+          <button igxButton="flat" igxRipple routerLink="/layouts" class="button">
+            Details
+          </button>
+        </ng-container>
       </igx-card-actions>
     </div>
     <igx-card-media width="100px">
@@ -24,43 +26,44 @@
   <igx-list class="list">
     <igx-list-item [isHeader]="false">
       <span igxListThumbnail>
-        <igx-avatar icon="home" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar icon="home" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </span>
       <span igxListLineTitle>Home</span>
+      <span igxListLineSubTitle>Subtitle...</span>
     </igx-list-item>
     <igx-list-item [isHeader]="false">
       <span igxListThumbnail>
-        <igx-avatar icon="business" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar icon="business" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </span>
       <span igxListLineTitle>Accounts</span>
     </igx-list-item>
     <igx-list-item [isHeader]="false">
       <span igxListThumbnail>
-        <igx-avatar icon="person_outline" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar icon="person_outline" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </span>
       <span igxListLineTitle>Contacts</span>
     </igx-list-item>
     <igx-list-item [isHeader]="false">
       <span igxListThumbnail>
-        <igx-avatar icon="inbox" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar icon="inbox" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </span>
       <span igxListLineTitle>Contracts</span>
     </igx-list-item>
     <igx-list-item [isHeader]="false">
       <span igxListThumbnail>
-        <igx-avatar icon="bar_chart" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar icon="bar_chart" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </span>
       <span igxListLineTitle>Reports</span>
     </igx-list-item>
     <igx-list-item [isHeader]="false">
       <span igxListThumbnail>
-        <igx-avatar icon="calendar_today" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar icon="calendar_today" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </span>
       <span igxListLineTitle>Calendar</span>
     </igx-list-item>
     <igx-list-item [isHeader]="false">
       <span igxListThumbnail>
-        <igx-avatar icon="assignment_turned_in" [roundShape]="true" class="avatar"></igx-avatar>
+        <igx-avatar icon="assignment_turned_in" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
       </span>
       <span igxListLineTitle>Tasks</span>
     </igx-list-item>
@@ -69,7 +72,7 @@
     <igx-list class="list_1">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar size="medium" class="avatar"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" FontSet="Material" shape="circle"></igx-avatar>
         </span>
         <span igxListLineTitle>{{ item.lastName }}</span>
         <span igxListLineSubTitle>{{ item.title }}</span>
@@ -85,7 +88,7 @@
     <igx-list class="list_1">
       <igx-list-item [isHeader]="false" *ngFor="let item of northwindEmployees">
         <span igxListThumbnail>
-          <igx-avatar size="large" [roundShape]="true" class="avatar"></igx-avatar>
+          <igx-avatar [src]="item.avatarUrl" size="large" FontSet="Material"></igx-avatar>
         </span>
         <span igxListLineTitle>{{ item.lastName }}</span>
         <span igxListLineSubTitle>{{ item.title }}</span>

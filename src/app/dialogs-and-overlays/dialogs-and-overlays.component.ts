@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./dialogs-and-overlays.component.scss']
 })
 export class DialogsAndOverlaysComponent {
+  public groupVisible = false;
 }

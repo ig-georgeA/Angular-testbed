@@ -54,6 +54,16 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+.filter-row {
+  background-color: hsla(var(--ig-warn-500));
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
 .button {
   height: max-content;
   flex-shrink: 0;
@@ -80,6 +90,13 @@
   font-size: 24px;
   width: 24px;
   height: 24px;
+}
+.hyperlink {
+  color: hsla(var(--ig-info-500));
+  cursor: pointer;
+  height: max-content;
+  min-width: min-content;
+  flex-shrink: 0;
 }
 .banner {
   height: max-content;

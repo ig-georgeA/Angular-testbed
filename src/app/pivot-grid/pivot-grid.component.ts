@@ -67,6 +67,6 @@ export class PivotGridComponent implements OnInit {
 
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
-    this.financialService.getData('Sales').subscribe(data => this.financialSales = data);
+    this.financialService.getData('SalesType').subscribe(data => this.financialSales = data);
   }
 }

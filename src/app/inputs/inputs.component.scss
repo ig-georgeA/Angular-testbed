@@ -64,11 +64,27 @@
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
+  gap: 32px;
   min-width: 50px;
   min-height: 50px;
   flex-shrink: 0;
 }
 .group_4 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_5 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.group_6 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -78,7 +94,7 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_5 {
+.group_7 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -86,7 +102,7 @@
   margin: 8px;
   min-width: 50px;
 }
-.group_6 {
+.group_8 {
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
@@ -94,7 +110,7 @@
   margin: 8px;
   min-width: 50px;
 }
-.group_7 {
+.group_9 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -104,7 +120,7 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_8 {
+.group_10 {
   justify-content: flex-start;
   align-items: flex-end;
   align-content: flex-start;
@@ -113,7 +129,7 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_9 {
+.group_11 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -142,16 +158,12 @@
   min-width: 50px;
 }
 .button {
-  margin: 16px;
   height: max-content;
   flex-shrink: 0;
 }
 .user-input {
   width: max-content;
   height: max-content;
-}
-.button_2 {
-  margin: 16px;
 }
 .button-group {
   height: max-content;
@@ -182,6 +194,11 @@
   min-width: min-content;
   min-height: max-content;
   max-height: max-content;
+  flex-shrink: 0;
+}
+.button_1 {
+  margin: 16px;
+  height: max-content;
   flex-shrink: 0;
 }
 .textarea {
@@ -215,25 +232,10 @@
 .avatar {
   --igx-avatar-color: hsla(var(--ig-surface-500));
   --igx-avatar-background: hsla(var(--ig-secondary-200));
-  --background: none;
-  --ig-gray-400: transparent;
-}
-.avatar_1 {
-  --igx-avatar-color: hsla(var(--ig-surface-500));
-  --igx-avatar-background: hsla(var(--ig-primary-500));
-  --background: none;
-  --ig-gray-400: transparent;
 }
 .text {
   height: max-content;
   min-width: min-content;
-}
-.hyperlink {
-  color: hsla(var(--ig-info-500));
-  cursor: pointer;
-  height: max-content;
-  min-width: min-content;
-  flex-shrink: 0;
 }
 .icon_2 {
   font-size: 24px;
@@ -249,4 +251,25 @@
   font-size: 48px;
   width: 48px;
   height: 48px;
+}
+.badge {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+}
+.badge_1 {
+  right: 0.5735294117647056px;
+  top: 0.8235294117647058px;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+}
+.badge_2 {
+  right: -8px;
+  top: -8px;
+  position: absolute;
+  width: max-content;
+  height: max-content;
 }

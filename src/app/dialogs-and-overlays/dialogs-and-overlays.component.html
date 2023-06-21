@@ -126,6 +126,14 @@
       <span>Open banner</span>
     </button>
   </div>
+  <div class="row-layout group_3">
+    <button igxButton="raised" igxRipple (click)="groupVisible = !groupVisible" class="button">
+      <igx-icon>
+        open_in_new
+      </igx-icon>
+      <span>Unhide filter row</span>
+    </button>
+  </div>
 </div>
 <igx-banner #banner class="banner">
   <p>
@@ -140,6 +148,14 @@
     mail
   </igx-icon>
 </igx-banner>
+<div *ngIf="groupVisible" class="row-layout filter-row">
+  <p class="text">
+    Filter row
+  </p>
+  <a target="_blank" (click)="groupVisible = !groupVisible" class="ig-typography__body-1 hyperlink">
+    Close
+  </a>
+</div>
 <igx-snackbar actionText="Dismiss" (clicked)="snackbar.toggle()" #snackbar class="snackbar">
   This is a message
 </igx-snackbar>

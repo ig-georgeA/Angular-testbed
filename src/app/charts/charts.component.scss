@@ -45,6 +45,16 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+.category-chart_1 {
+  --brushes: #003F5C #2F4B7C #665191 #A05195 #D45087 #F95D6A #FF7C43 #FFA600;
+  --outlines: #003F5C #2F4B7C #665191 #A05195 #D45087 #F95D6A #FF7C43 #FFA600;
+  --marker-brushes: #003F5C #2F4B7C #665191 #A05195 #D45087 #F95D6A #FF7C43 #FFA600;
+  --marker-outlines: #003F5C #2F4B7C #665191 #A05195 #D45087 #F95D6A #FF7C43 #FFA600;
+  min-width: 400px;
+  min-height: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
 .pie-chart {
   min-width: 250px;
   min-height: 250px;

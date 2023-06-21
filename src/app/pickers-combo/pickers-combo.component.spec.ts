@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxSelectModule, IgxInputGroupModule, IgxIconModule, IgxComboModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxDropDownModule } from '@infragistics/igniteui-angular';
+import { IgxSelectModule, IgxInputGroupModule, IgxIconModule, IgxComboModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxDatePickerModule, IgxDropDownModule } from '@infragistics/igniteui-angular';
 import { PickersComboComponent } from './pickers-combo.component';
 
 describe('PickersComboComponent', () => {
@@ -13,7 +13,7 @@ describe('PickersComboComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ PickersComboComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxSelectModule, IgxInputGroupModule, IgxIconModule, IgxComboModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxDropDownModule ]
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxSelectModule, IgxInputGroupModule, IgxIconModule, IgxComboModule, IgxButtonModule, IgxRippleModule, IgxToggleModule, IgxDatePickerModule, IgxDropDownModule ]
     })
     .compileComponents();
   });

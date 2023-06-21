@@ -19,8 +19,8 @@ export class TabLayoutComponent implements OnInit {
 
   ngOnInit() {
     // depending on implementation, data subscriptions might need to be unsubbed later
-    this.northwindService.getData('Customers').subscribe(data => this.northwindCustomers = data);
-    this.northwindService.getData('Employees').subscribe(data => this.northwindEmployees = data);
-    this.financialService.getData('BoxOfficeRevenue').subscribe(data => this.financialBoxOfficeRevenue = data);
+    this.northwindService.getData('CustomersType').subscribe(data => this.northwindCustomers = data);
+    this.northwindService.getData('EmployeesType').subscribe(data => this.northwindEmployees = data);
+    this.financialService.getData('BoxOfficeRevenueType').subscribe(data => this.financialBoxOfficeRevenue = data);
   }
 }

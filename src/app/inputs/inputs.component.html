@@ -95,9 +95,9 @@
   <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" class="slider"></igx-slider>
   <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="1" [showTicks]="true" class="slider"></igx-slider>
   <div class="row-layout group_1">
-    <igx-avatar initials="GM" size="large" [roundShape]="true" class="avatar"></igx-avatar>
-    <igx-avatar src="/assets/Avatar2.png" size="medium" class="avatar"></igx-avatar>
-    <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
+    <igx-avatar initials="GM" size="large" FontSet="Material" shape="circle" class="avatar"></igx-avatar>
+    <igx-avatar src="/assets/Avatar2.png" size="medium" FontSet="Material" class="avatar"></igx-avatar>
+    <igx-avatar icon="people" FontSet="Material" shape="circle"></igx-avatar>
   </div>
 </div>
 <div class="column-layout group_2">
@@ -146,26 +146,20 @@
   </igx-input-group>
   <igx-input-group type="border" class="input-group">
     <label igxLabel for="inputField">Date</label>
-    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
+    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [(ngModel)]="date2" />
   </igx-input-group>
   <div class="row-layout group_3">
-    <button igxButton="outlined" igxRipple class="button">
-      <igx-icon>
-        add
-      </igx-icon>
-      <span>Button</span>
-    </button>
-    <button igxButton="outlined" [disabled]="true" igxRipple class="button">
-      <igx-icon>
-        add
-      </igx-icon>
-      <span>Button</span>
-    </button>
     <button igxButton="raised" igxRipple routerLink="/lists-data" class="button">
       <igx-icon>
         star
       </igx-icon>
       <span>Lists</span>
+    </button>
+    <button igxButton="outlined" igxRipple class="button">
+      <igx-icon>
+        add
+      </igx-icon>
+      <span>Button</span>
     </button>
     <button igxButton="flat" igxRipple class="button">
       <span>Button</span>
@@ -173,23 +167,49 @@
         add
       </igx-icon>
     </button>
+    <button igxButton="outlined" [disabled]="true" igxRipple class="button">
+      <igx-icon>
+        add
+      </igx-icon>
+      <span>Button</span>
+    </button>
     <button igxButton="fab" igxRipple class="user-input">
       <igx-icon>
         add
       </igx-icon>
       <span>Fab</span>
     </button>
-    <button igxButton="icon" igxRipple class="button_2">
-      <igx-icon>
-        email
-      </igx-icon>
-    </button>
-    <a href="https://google.com" target="_blank" class="ig-typography__body-1 hyperlink">
-      View charts
-    </a>
+    <div class="row-layout group_4">
+      <div class="row-layout group_5">
+        <button igxButton="icon" igxRipple>
+          <igx-icon>
+            email
+          </igx-icon>
+        </button>
+        <igx-badge FontSet="Material" icon="check" class="badge"></igx-badge>
+      </div>
+      <div class="row-layout group_5">
+        <igx-icon class="icon_2">
+          notifications
+        </igx-icon>
+        <igx-badge type="error" FontSet="Material" class="badge_1"></igx-badge>
+      </div>
+      <div class="row-layout group_5">
+        <igx-icon class="icon_2">
+          mail
+        </igx-icon>
+        <igx-badge type="warning" FontSet="Material" icon="check" class="badge_2"></igx-badge>
+      </div>
+      <div class="row-layout group_5">
+        <igx-icon class="icon_2">
+          mail
+        </igx-icon>
+        <igx-badge type="success" FontSet="Material" value="999" class="badge_2"></igx-badge>
+      </div>
+    </div>
   </div>
-  <div class="column-layout group_4">
-    <div class="row-layout group_5">
+  <div class="column-layout group_6">
+    <div class="row-layout group_7">
       <igx-buttongroup class="button-group">
         <button igxButton="flat" igxRipple>
           <igx-icon>
@@ -212,7 +232,7 @@
       </igx-switch>
       <igx-switch [checked]="true" class="user-input_1"></igx-switch>
     </div>
-    <div class="row-layout group_6">
+    <div class="row-layout group_8">
       <igx-checkbox [checked]="true" [indeterminate]="false" class="checkbox"></igx-checkbox>
       <igx-checkbox labelPosition="after" [checked]="true" [indeterminate]="false" class="checkbox">
         Does it work?
@@ -222,7 +242,7 @@
       </igx-checkbox>
     </div>
   </div>
-  <div class="row-layout group_7">
+  <div class="row-layout group_9">
     <igx-radio-group alignment="vertical" value="1" [required]="true" class="radio-group">
       <igx-radio value="1" class="radio">
         Label
@@ -234,7 +254,7 @@
         Label
       </igx-radio>
     </igx-radio-group>
-    <igx-radio-group [disabled]="true" value="1" [required]="true" class="user-input_1">
+    <igx-radio-group value="1" [required]="true" class="user-input_1">
       <igx-radio value="1" class="radio">
         Label
       </igx-radio>
@@ -246,19 +266,19 @@
       </igx-radio>
     </igx-radio-group>
   </div>
-  <div class="row-layout group_8">
+  <div class="row-layout group_10">
     <igx-input-group type="border" class="input_1">
       <input type="text" [(ngModel)]="value" [required]="true" igxInput />
       <label igxLabel>Group name</label>
     </igx-input-group>
-    <button igxButton="outlined" igxRipple class="button">
+    <button igxButton="outlined" igxRipple class="button_1">
       <igx-icon>
         check
       </igx-icon>
       <span>Submit</span>
     </button>
   </div>
-  <div class="row-layout group_9">
+  <div class="row-layout group_11">
     <igx-icon class="icon_1">
       person
     </igx-icon>
