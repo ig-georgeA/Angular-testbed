@@ -2,7 +2,7 @@
   <igx-input-group type="box" class="input">
     <igx-prefix>
       <igx-icon class="icon">
-        person
+        mail
       </igx-icon>
     </igx-prefix>
     <igx-suffix>
@@ -10,8 +10,8 @@
         clear
       </igx-icon>
     </igx-suffix>
-    <input type="text" igxInput />
-    <label igxLabel>Label/Placeholder</label>
+    <input type="email" igxInput />
+    <label igxLabel>Email address</label>
   </igx-input-group>
   <igx-input-group type="box" class="input">
     <input type="text" [disabled]="true" igxInput />
@@ -28,7 +28,7 @@
     <igx-hint>sample hint text</igx-hint>
   </igx-input-group>
   <igx-input-group type="box" class="input">
-    <input type="text" igxInput />
+    <input type="text" placeholder="Label/Placeholder" igxInput />
     <label igxLabel>Label/Placeholder</label>
   </igx-input-group>
   <igx-input-group type="box" class="input-group">
@@ -43,7 +43,7 @@
     <label igxLabel>Label/Placeholder</label>
     <textarea igxInput></textarea>
   </igx-input-group>
-  <igx-date-picker type="box" [(ngModel)]="date3" class="date-picker">
+  <igx-date-picker type="box" class="date-picker">
     <label igxLabel>Date</label>
   </igx-date-picker>
   <div class="row-layout group">
@@ -65,9 +65,11 @@
     </igx-chip>
     <igx-chip class="chip_1">
       <igx-prefix>
-        <igx-icon class="icon_1">
-          account_balance
-        </igx-icon>
+        <igx-avatar shape="circle" class="avatar avatar_3">
+          <igx-icon>
+            people
+          </igx-icon>
+        </igx-avatar>
       </igx-prefix>
       <igx-suffix>
         <igx-icon class="icon_1">
@@ -90,17 +92,44 @@
       Country
     </igx-chip>
   </div>
-  <igx-slider [value]="50" [disabled]="true" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="2" [showTicks]="true" class="slider"></igx-slider>
-  <igx-slider [value]="50" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [showTicks]="true" class="slider"></igx-slider>
-  <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" class="slider"></igx-slider>
-  <igx-slider type="range" [value]="{ lower: 20, upper: 80 }" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="1" [showTicks]="true" class="slider"></igx-slider>
   <div class="row-layout group_1">
-    <igx-avatar initials="GM" size="large" [roundShape]="true" class="avatar"></igx-avatar>
-    <igx-avatar src="/assets/Avatar2.png" size="medium" class="avatar"></igx-avatar>
-    <igx-avatar icon="people" [roundShape]="true" class="avatar_1"></igx-avatar>
+    <igx-chip class="chip_2">
+      <igx-prefix>
+        <igx-avatar initials="AB" shape="circle" class="avatar_1 avatar_1_1"></igx-avatar>
+      </igx-prefix>
+      Country
+    </igx-chip>
+  </div>
+  <igx-slider [(ngModel)]="value" [disabled]="true" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="2" [showTicks]="true" [showTicks]="true" class="slider"></igx-slider>
+  <igx-slider [(ngModel)]="value" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="2" ticksOrientation="mirror" [showTicks]="true" [showTicks]="true" class="slider"></igx-slider>
+  <igx-slider type="range" [(ngModel)]="value1" [minValue]="0" [maxValue]="100" [step]="10" [secondaryTickLabels]="false" class="slider"></igx-slider>
+  <igx-slider type="range" [(ngModel)]="value1" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="1" [showTicks]="true" [showTicks]="true" class="slider"></igx-slider>
+  <div class="row-layout group_2">
+    <igx-avatar initials="GM" size="large" shape="circle" class="avatar_2 avatar_2_1"></igx-avatar>
+    <igx-avatar src="/assets/Avatar2.png" size="medium" class="avatar_2 avatar_2_2"></igx-avatar>
+    <igx-avatar shape="circle">
+      <igx-icon>
+        people
+      </igx-icon>
+    </igx-avatar>
+  </div>
+  <div class="row-layout group_3">
+    <igx-icon class="icon_1">
+      person
+    </igx-icon>
+    <igx-icon class="icon_2">
+      person
+    </igx-icon>
+    <igx-icon class="icon_3">
+      person
+    </igx-icon>
+    <igx-icon class="icon_4">
+      person
+    </igx-icon>
+    <igc-rating [(ngModel)]="value2" size="large" hover-preview="true" class="user-input"></igc-rating>
   </div>
 </div>
-<div class="column-layout group_2">
+<div class="column-layout group_4">
   <igx-input-group type="border" class="input">
     <igx-prefix>
       <p class="ig-typography__body-2 text">
@@ -112,11 +141,11 @@
         .com
       </p>
     </igx-suffix>
-    <input type="text" igxInput />
-    <label igxLabel>Label + prefix + suffix + border</label>
+    <input type="text" placeholder="Label + prefix + suffix + border" igxInput />
+    <label igxLabel>Label/Placeholder</label>
   </igx-input-group>
   <igx-input-group type="border" class="input">
-    <input type="text" [(ngModel)]="value" [required]="true" igxInput />
+    <input type="text" [(ngModel)]="value3" [required]="true" igxInput />
     <label igxLabel>Label + required</label>
   </igx-input-group>
   <igx-input-group type="border" class="input">
@@ -137,7 +166,7 @@
     <label igxLabel>Prefix, helptext and border</label>
     <igx-hint>sample hint text</igx-hint>
   </igx-input-group>
-  <igx-date-picker type="border" [(ngModel)]="date3" class="date-picker">
+  <igx-date-picker type="border" class="date-picker">
     <label igxLabel>Date</label>
   </igx-date-picker>
   <igx-input-group type="border" class="input-group">
@@ -146,26 +175,20 @@
   </igx-input-group>
   <igx-input-group type="border" class="input-group">
     <label igxLabel for="inputField">Date</label>
-    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
+    <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="shortTime" [spinLoop]="true" [(ngModel)]="date2" />
   </igx-input-group>
-  <div class="row-layout group_3">
-    <button igxButton="outlined" igxRipple class="button">
-      <igx-icon>
-        add
-      </igx-icon>
-      <span>Button</span>
-    </button>
-    <button igxButton="outlined" [disabled]="true" igxRipple class="button">
-      <igx-icon>
-        add
-      </igx-icon>
-      <span>Button</span>
-    </button>
+  <div class="row-layout group_5">
     <button igxButton="raised" igxRipple routerLink="/lists-data" class="button">
       <igx-icon>
         star
       </igx-icon>
       <span>Lists</span>
+    </button>
+    <button igxButton="outlined" igxRipple class="button">
+      <igx-icon>
+        add
+      </igx-icon>
+      <span>Button</span>
     </button>
     <button igxButton="flat" igxRipple class="button">
       <span>Button</span>
@@ -173,23 +196,54 @@
         add
       </igx-icon>
     </button>
+    <button igxButton="outlined" [disabled]="true" igxRipple class="button">
+      <igx-icon>
+        add
+      </igx-icon>
+      <span>Button</span>
+    </button>
     <button igxButton="fab" igxRipple class="user-input">
       <igx-icon>
         add
       </igx-icon>
       <span>Fab</span>
     </button>
-    <button igxButton="icon" igxRipple class="button_2">
-      <igx-icon>
-        email
-      </igx-icon>
-    </button>
-    <a href="https://google.com" target="_blank" class="ig-typography__body-1 hyperlink">
-      View charts
+    <a href="https://www.youtube.com/playlist?list=PLZ4rRHIJepBuKeP2WqXZUtG8LAYmyHHsa" target="_blank" class="ig-typography__body-1 hyperlink">
+      YouTube playlist
     </a>
+    <div class="row-layout group_6">
+      <div class="row-layout group_7">
+        <button igxButton="icon" igxRipple>
+          <igx-icon>
+            email
+          </igx-icon>
+        </button>
+        <igx-badge type="success" icon="check" class="badge"></igx-badge>
+      </div>
+      <div class="row-layout group_7">
+        <igx-icon class="icon_2">
+          notifications
+        </igx-icon>
+        <igx-badge type="error" class="badge_1"></igx-badge>
+      </div>
+      <div class="row-layout group_7">
+        <igx-icon class="icon_2">
+          mail
+        </igx-icon>
+        <igx-badge type="warning" icon="check" class="badge_2"></igx-badge>
+      </div>
+      <div class="row-layout group_7">
+        <igx-icon class="icon_2">
+          mail
+        </igx-icon>
+        <igx-badge type="success" value="999" class="badge_2"></igx-badge>
+      </div>
+      <igx-badge type="success" value="Accepted" class="badge_3"></igx-badge>
+      <igx-badge type="error" value="Denied" class="badge_3"></igx-badge>
+    </div>
   </div>
-  <div class="column-layout group_4">
-    <div class="row-layout group_5">
+  <div class="column-layout group_8">
+    <div class="row-layout group_9">
       <igx-buttongroup class="button-group">
         <button igxButton="flat" igxRipple>
           <igx-icon>
@@ -201,28 +255,45 @@
             format_align_center
           </igx-icon>
         </button>
-        <button igxButton="flat" igxRipple>
+        <button igxButton="flat" [selected]="true" igxRipple>
           <igx-icon>
             format_align_right
           </igx-icon>
         </button>
       </igx-buttongroup>
-      <igx-switch [checked]="true" class="user-input_1">
+      <igx-buttongroup class="button-group">
+        <button igxButton="flat" igxRipple>
+          <igx-icon>
+            format_bold
+          </igx-icon>
+        </button>
+        <button igxButton="flat" [disabled]="true" igxRipple>
+          <igx-icon>
+            format_italic
+          </igx-icon>
+        </button>
+        <button igxButton="flat" [disabled]="true" igxRipple>
+          <igx-icon>
+            format_underlined
+          </igx-icon>
+        </button>
+      </igx-buttongroup>
+      <igx-switch [(ngModel)]="checked" class="user-input_1">
         Notify me
       </igx-switch>
-      <igx-switch [checked]="true" class="user-input_1"></igx-switch>
+      <igx-switch [(ngModel)]="checked" class="user-input_1"></igx-switch>
     </div>
-    <div class="row-layout group_6">
-      <igx-checkbox [checked]="true" [indeterminate]="false" class="checkbox"></igx-checkbox>
-      <igx-checkbox labelPosition="after" [checked]="true" [indeterminate]="false" class="checkbox">
+    <div class="row-layout group_10">
+      <igx-checkbox [checked]="true" class="checkbox"></igx-checkbox>
+      <igx-checkbox labelPosition="after" [checked]="true" class="checkbox">
         Does it work?
       </igx-checkbox>
-      <igx-checkbox labelPosition="before" [checked]="true" [indeterminate]="false" class="user-input">
+      <igx-checkbox labelPosition="before" [checked]="true" class="user-input">
         How about now?
       </igx-checkbox>
     </div>
   </div>
-  <div class="row-layout group_7">
+  <div class="row-layout group_11">
     <igx-radio-group alignment="vertical" value="1" [required]="true" class="radio-group">
       <igx-radio value="1" class="radio">
         Label
@@ -234,7 +305,7 @@
         Label
       </igx-radio>
     </igx-radio-group>
-    <igx-radio-group [disabled]="true" value="1" [required]="true" class="user-input_1">
+    <igx-radio-group value="1" [required]="true" class="user-input_1">
       <igx-radio value="1" class="radio">
         Label
       </igx-radio>
@@ -246,31 +317,16 @@
       </igx-radio>
     </igx-radio-group>
   </div>
-  <div class="row-layout group_8">
+  <div class="row-layout group_12">
     <igx-input-group type="border" class="input_1">
-      <input type="text" [(ngModel)]="value" [required]="true" igxInput />
+      <input type="text" [(ngModel)]="value3" [required]="true" igxInput />
       <label igxLabel>Group name</label>
     </igx-input-group>
-    <button igxButton="outlined" igxRipple class="button">
+    <button igxButton="outlined" igxRipple class="button_1">
       <igx-icon>
         check
       </igx-icon>
       <span>Submit</span>
     </button>
-  </div>
-  <div class="row-layout group_9">
-    <igx-icon class="icon_1">
-      person
-    </igx-icon>
-    <igx-icon class="icon_2">
-      person
-    </igx-icon>
-    <igx-icon class="icon_3">
-      person
-    </igx-icon>
-    <igx-icon class="icon_4">
-      person
-    </igx-icon>
-    <igc-rating size="large" [(ngModel)]="value1" class="user-input"></igc-rating>
   </div>
 </div>

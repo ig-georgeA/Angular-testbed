@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { IgxPivotGridModule } from '@infragistics/igniteui-angular';
 import { PivotGridComponent } from './pivot-grid.component';
@@ -12,7 +13,7 @@ describe('PivotGridComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ PivotGridComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxPivotGridModule ]
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxPivotGridModule ]
     })
     .compileComponents();
   });

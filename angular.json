@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "component-test-app-scenarios": {
+    "component-demos-scenarios": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/component-test-app-scenarios",
+            "outputPath": "dist/component-demos-scenarios",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -77,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "component-test-app-scenarios:build:production"
+              "browserTarget": "component-demos-scenarios:build:production"
             },
             "development": {
-              "browserTarget": "component-test-app-scenarios:build:development"
+              "browserTarget": "component-demos-scenarios:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -88,7 +88,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "component-test-app-scenarios:build"
+            "browserTarget": "component-demos-scenarios:build"
           }
         },
         "test": {
@@ -126,7 +126,6 @@
       }
     }
   },
-  "defaultProject": "component-test-app-scenarios",
   "cli": {
     "schematicCollections": ["@angular-eslint/schematics"]
   }

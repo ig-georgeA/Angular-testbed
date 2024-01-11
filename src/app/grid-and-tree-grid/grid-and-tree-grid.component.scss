@@ -6,12 +6,6 @@
   align-items: stretch;
   align-content: flex-start;
 }
-.list {
-  min-width: 600px;
-  min-height: 300px;
-  flex-grow: 1;
-  flex-basis: 0;
-}
 .row-layout {
   display: flex;
 }
@@ -19,9 +13,17 @@
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
+  gap: 32px;
   position: relative;
+  padding: 32px;
   min-width: 50px;
   min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.list {
+  min-width: 600px;
+  min-height: 300px;
   flex-grow: 1;
   flex-basis: 0;
 }

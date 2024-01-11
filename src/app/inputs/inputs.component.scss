@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
-  overflow: auto;
 }
 .column-layout {
   display: flex;
@@ -24,6 +23,7 @@
   width: 500px;
   min-width: 320px;
   min-height: 50px;
+  max-width: 500px;
   flex-shrink: 0;
 }
 .row-layout {
@@ -40,6 +40,16 @@
 }
 .group_1 {
   justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px;
+  overflow: auto;
+  position: relative;
+  min-width: 50px;
+  min-height: max-content;
+}
+.group_2 {
+  justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   gap: 16px;
@@ -47,7 +57,17 @@
   min-width: 50px;
   min-height: 50px;
 }
-.group_2 {
+.group_3 {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  overflow: hidden;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_4 {
   background-color: hsla(var(--ig-surface-500));
   justify-content: flex-start;
   align-items: stretch;
@@ -57,18 +77,36 @@
   width: 500px;
   min-width: 320px;
   min-height: 50px;
+  max-width: 500px;
   flex-shrink: 0;
 }
-.group_3 {
+.group_5 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
+  gap: 32px;
   min-width: 50px;
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_4 {
+.group_6 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 32px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.group_7 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.group_8 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -78,7 +116,17 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_5 {
+.group_9 {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  margin: 8px;
+  min-width: 50px;
+}
+.group_10 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
@@ -86,15 +134,7 @@
   margin: 8px;
   min-width: 50px;
 }
-.group_6 {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-  margin: 8px;
-  min-width: 50px;
-}
-.group_7 {
+.group_11 {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -104,22 +144,12 @@
   min-height: 50px;
   flex-shrink: 0;
 }
-.group_8 {
+.group_12 {
   justify-content: flex-start;
   align-items: flex-end;
   align-content: flex-start;
   position: relative;
   padding: 16px;
-  min-width: 50px;
-  min-height: 50px;
-}
-.group_9 {
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 16px;
-  overflow: hidden;
-  position: relative;
   min-width: 50px;
   min-height: 50px;
 }
@@ -141,17 +171,13 @@
   height: max-content;
   min-width: 50px;
 }
-.button {
-  margin: 16px;
-  height: max-content;
-  flex-shrink: 0;
-}
 .user-input {
   width: max-content;
   height: max-content;
 }
-.button_2 {
-  margin: 16px;
+.button {
+  height: max-content;
+  flex-shrink: 0;
 }
 .button-group {
   height: max-content;
@@ -184,11 +210,17 @@
   max-height: max-content;
   flex-shrink: 0;
 }
+.button_1 {
+  margin: 16px;
+  height: max-content;
+  flex-shrink: 0;
+}
 .textarea {
   height: max-content;
   min-width: min-content;
 }
 .icon {
+  --size: 24px;
   font-size: 24px;
   width: 24px;
   height: 24px;
@@ -203,6 +235,7 @@
   height: max-content;
 }
 .icon_1 {
+  --size: 18px;
   font-size: 18px;
   width: 18px;
   height: 18px;
@@ -213,16 +246,35 @@
   height: max-content;
 }
 .avatar {
-  --igx-avatar-color: hsla(var(--ig-surface-500));
-  --igx-avatar-background: hsla(var(--ig-secondary-200));
-  --background: none;
-  --ig-gray-400: transparent;
+  --igx-avatar-background: hsla(var(--ig-secondary-800));
+}
+.chip_2 {
+  width: max-content;
+  height: max-content;
 }
 .avatar_1 {
-  --igx-avatar-color: hsla(var(--ig-surface-500));
-  --igx-avatar-background: hsla(var(--ig-primary-500));
-  --background: none;
-  --ig-gray-400: transparent;
+  --igx-avatar-background: hsla(var(--ig-secondary-300));
+}
+.avatar_2 {
+  --igx-avatar-background: hsla(var(--ig-secondary-200));
+}
+.icon_2 {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.icon_3 {
+  --size: 36px;
+  font-size: 36px;
+  width: 36px;
+  height: 36px;
+}
+.icon_4 {
+  --size: 48px;
+  font-size: 48px;
+  width: 48px;
+  height: 48px;
 }
 .text {
   height: max-content;
@@ -235,18 +287,40 @@
   min-width: min-content;
   flex-shrink: 0;
 }
-.icon_2 {
-  font-size: 24px;
-  width: 24px;
-  height: 24px;
+.avatar_3::part(base) {
+  --igx-avatar-color: hsla(var(--ig-gray-100));
 }
-.icon_3 {
-  font-size: 36px;
-  width: 36px;
-  height: 36px;
+.avatar_1_1::part(base) {
+  --igx-avatar-color: hsla(var(--ig-gray-100));
 }
-.icon_4 {
-  font-size: 48px;
-  width: 48px;
-  height: 48px;
+.avatar_2_1::part(base) {
+  --igx-avatar-color: hsla(var(--ig-surface-500));
+}
+.avatar_2_2::part(base) {
+  --igx-avatar-color: hsla(var(--ig-surface-500));
+}
+.badge {
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+}
+.badge_1 {
+  right: 0.5735294117647056px;
+  top: 0.8235294117647058px;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+}
+.badge_2 {
+  right: -8px;
+  top: -8px;
+  position: absolute;
+  width: max-content;
+  height: max-content;
+}
+.badge_3 {
+  width: max-content;
+  height: max-content;
 }

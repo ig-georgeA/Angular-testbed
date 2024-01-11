@@ -1,0 +1,43 @@
+<div class="column-layout group">
+  <igx-grid [data]="northwindAPIv2EmployeeDto" primaryKey="employeeId" displayDensity="cosy" rowSelection="multiple" [rowEditable]="true" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+    <igx-column field="lastName" dataType="string" header="Employee name" width="212px" [pinned]="true" [groupable]="true" [sortable]="true" [resizable]="true" [selectable]="false">
+      <ng-template igxCell let-cell="cell">
+        <div class="row-layout cell-display-layout">
+          <igx-avatar [src]="cell.row.data.avatarUrl" shape="rounded" class="avatar"></igx-avatar>
+          <p class="ig-typography__body-2 text">
+            {{ cell.row.data.firstName }}
+          </p>
+          <p class="ig-typography__body-2 text">
+            {{ cell.value }}
+          </p>
+        </div>
+      </ng-template>
+    </igx-column>
+    <igx-column field="title" dataType="string" header="Job title" [groupable]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.region" dataType="string" header="State" width="179px" [groupable]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.city" header="City" width="209px" [groupable]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column field="address.phone" dataType="string" header="Phone" [groupable]="true" [sortable]="true" [resizable]="true" [selectable]="false">
+      <ng-template igxCell let-cell="cell">
+        <igx-chip class="chip">
+          <igx-prefix>
+            <igx-icon class="icon">
+              phone
+            </igx-icon>
+          </igx-prefix>
+          {{ cell.value }}
+        </igx-chip>
+      </ng-template>
+    </igx-column>
+    <igx-column field="hireDate" header="Hire date" width="189px" [groupable]="true" [sortable]="true" [resizable]="true" [selectable]="false"></igx-column>
+    <igx-column width="203px" [groupable]="true" [sortable]="true" [resizable]="true" [selectable]="false">
+      <ng-template igxCell>
+        <button igxButton="flat" igxRipple routerLink="/selection-detail" class="button">
+          <span>View details</span>
+          <igx-icon>
+            arrow_forward
+          </igx-icon>
+        </button>
+      </ng-template>
+    </igx-column>
+  </igx-grid>
+</div>
