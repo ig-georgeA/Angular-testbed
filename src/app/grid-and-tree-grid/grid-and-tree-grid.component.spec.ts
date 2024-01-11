@@ -1,8 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxGridModule, IgxActionStripModule, IgxTreeGridModule } from '@infragistics/igniteui-angular';
+import { IgxGridModule, IgxTreeGridModule } from '@infragistics/igniteui-angular';
 import { GridAndTreeGridComponent } from './grid-and-tree-grid.component';
 
 describe('GridAndTreeGridComponent', () => {
@@ -12,7 +13,7 @@ describe('GridAndTreeGridComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [ GridAndTreeGridComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, IgxGridModule, IgxActionStripModule, IgxTreeGridModule ]
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxGridModule, IgxTreeGridModule ]
     })
     .compileComponents();
   });

@@ -1,4 +1,4 @@
-# Component-test (app scenarios)
+# Component-demos & scenarios
 
 This project was generated with [App Builder Code Gen](https://www.infragistics.com/products/appbuilder).
 

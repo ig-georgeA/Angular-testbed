@@ -1,12 +1,11 @@
 :host {
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   align-content: flex-start;
 }
-.basic-grid {
+.grid-plus {
   min-width: 600px;
   min-height: 300px;
   flex-grow: 1;

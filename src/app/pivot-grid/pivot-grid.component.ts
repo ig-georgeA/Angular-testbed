@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { GridColumnDataType, IgxPivotDateDimension, IgxPivotNumericAggregate } from '@infragistics/igniteui-angular';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { IPivotConfiguration, IgxPivotDateDimension, IgxPivotNumericAggregate } from '@infragistics/igniteui-angular';
+import { Subject, takeUntil } from 'rxjs';
+import { SalesType } from '../models/financial/sales-type';
 import { FinancialService } from '../services/financial.service';
 
 @Component({
@@ -7,8 +9,9 @@ import { FinancialService } from '../services/financial.service';
   templateUrl: './pivot-grid.component.html',
   styleUrls: ['./pivot-grid.component.scss']
 })
-export class PivotGridComponent implements OnInit {
-  public dateDimension = new IgxPivotDateDimension({
+export class PivotGridComponent implements OnInit, OnDestroy {
+  private destroy$: Subject<void> = new Subject<void>();
+  public dateDimension: IgxPivotDateDimension = new IgxPivotDateDimension({
     memberName: 'Date',
     enabled: true
   }, {
@@ -16,7 +19,7 @@ export class PivotGridComponent implements OnInit {
     quarters: true,
     years: true
   });
-  public pivotConfigHierarchy = {
+  public pivotConfigHierarchy: IPivotConfiguration = {
     columns: [
       {
         memberName: 'Country',
@@ -39,7 +42,7 @@ export class PivotGridComponent implements OnInit {
           label: 'Sum'
         },
         enabled: false,
-        dataType: GridColumnDataType.Currency
+        dataType: 'currency'
       },
       {
         member: 'Profit',
@@ -49,7 +52,7 @@ export class PivotGridComponent implements OnInit {
           label: 'Sum'
         },
         enabled: true,
-        dataType: GridColumnDataType.Currency
+        dataType: 'currency'
       }
     ],
     filters: [
@@ -59,14 +62,21 @@ export class PivotGridComponent implements OnInit {
       }
     ]
   };
-  public financialSales: any = null;
+  public financialSales: SalesType[] = [];
 
   constructor(
     private financialService: FinancialService,
   ) {}
 
   ngOnInit() {
-    // depending on implementation, data subscriptions might need to be unsubbed later
-    this.financialService.getData('Sales').subscribe(data => this.financialSales = data);
+    this.financialService.getData('SalesType').pipe(takeUntil(this.destroy$)).subscribe({
+      next: (data) => this.financialSales = data,
+      error: (_err: any) => this.financialSales = []
+    });
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 }
