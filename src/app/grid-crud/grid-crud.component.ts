@@ -29,6 +29,19 @@ export class GridCRUDComponent implements OnInit, OnDestroy {
     this.destroy$.complete();
   }
 
+  public customersRowEditDone(args: IGridEditDoneEventArgs) {
+    if(args.isAddRow == false) {
+      this.northwindAPIv2Service.putCustomerDto(args.rowData).pipe(takeUntil(this.destroy$)).subscribe({
+        next: (_e) => {
+          this.northwindAPIv2Service.getCustomerDtoList().pipe(takeUntil(this.destroy$)).subscribe(data => this.northwindAPIv2CustomerDto = data);
+        },
+        error: (_err) => {
+          // TODO: handle errors here.
+        },
+      });
+    }
+  }
+
   public customersRowDeleted(args: IRowDataEventArgs) {
     this.northwindAPIv2Service.deleteCustomerDto(args.primaryKey).pipe(takeUntil(this.destroy$)).subscribe({
       next: (_e) => {
@@ -49,18 +62,5 @@ export class GridCRUDComponent implements OnInit, OnDestroy {
         // TODO: handle errors here.
       },
     });
-  }
-
-  public customersRowEditDone(args: IGridEditDoneEventArgs) {
-    if(args.isAddRow == false) {
-      this.northwindAPIv2Service.putCustomerDto(args.rowData).pipe(takeUntil(this.destroy$)).subscribe({
-        next: (_e) => {
-          this.northwindAPIv2Service.getCustomerDtoList().pipe(takeUntil(this.destroy$)).subscribe(data => this.northwindAPIv2CustomerDto = data);
-        },
-        error: (_err) => {
-          // TODO: handle errors here.
-        },
-      });
-    }
   }
 }

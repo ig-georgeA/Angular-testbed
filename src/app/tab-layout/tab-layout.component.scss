@@ -151,6 +151,7 @@
 .calendar {
   width: max-content;
   height: max-content;
+  min-width: max-content;
   flex-shrink: 0;
 }
 .icon {

@@ -40,8 +40,7 @@
     <input name="inputField" [required]="false" [disabled]="false" igxInput igxDateTimeEditor="dd/MM/yyyy" displayFormat="longDate" [spinLoop]="true" [minValue]="date" [maxValue]="date1" [(ngModel)]="date2" />
   </igx-input-group>
   <igx-input-group type="box" class="ig-typography__body-1 textarea">
-    <label igxLabel>Label/Placeholder</label>
-    <textarea igxInput></textarea>
+    <textarea placeholder="Type here" igxInput></textarea>
   </igx-input-group>
   <igx-date-picker type="box" class="date-picker">
     <label igxLabel>Date</label>
@@ -255,7 +254,7 @@
             format_align_center
           </igx-icon>
         </button>
-        <button igxButton="flat" [selected]="true" igxRipple>
+        <button igxButton="flat" igxRipple>
           <igx-icon>
             format_align_right
           </igx-icon>

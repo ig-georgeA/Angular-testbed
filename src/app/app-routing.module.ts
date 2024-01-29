@@ -26,6 +26,7 @@ import { InputsComponent } from './inputs/inputs.component';
 import { PickersComboComponent } from './pickers-combo/pickers-combo.component';
 import { DialogsAndDropdownsComponent } from './dialogs-and-dropdowns/dialogs-and-dropdowns.component';
 import { ImageComponent } from './image/image.component';
+import { ChildViewComponent } from './child-view/child-view.component';
 
 export const routes: Routes = [
   { path: 'error', component: UncaughtErrorComponent },
@@ -51,6 +52,7 @@ export const routes: Routes = [
   { path: 'pickers-combo', component: PickersComboComponent, data: { text: 'Pickers + Combo' } },
   { path: 'dialogs-and-dropdowns', component: DialogsAndDropdownsComponent, data: { text: 'Dialogs and dropdowns' } },
   { path: 'image', component: ImageComponent, data: { text: 'Image' } },
+  { path: 'child-view', component: ChildViewComponent, data: { text: 'Child View' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

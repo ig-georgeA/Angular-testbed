@@ -1,4 +1,4 @@
-<igx-grid [data]="northwindAPIv2CustomerDto" primaryKey="customerId" displayDensity="cosy" rowSelection="single" [rowEditable]="true" [moving]="true" [allowFiltering]="true" filterMode="quickFilter" (rowDeleted)="customersRowDeleted($event)" (rowAdded)="customersRowAdded($event)" (rowEditDone)="customersRowEditDone($event)" class="grid-plus">
+<igx-grid [data]="northwindAPIv2CustomerDto" primaryKey="customerId" displayDensity="cosy" rowSelection="single" [rowEditable]="true" [moving]="true" [allowFiltering]="true" filterMode="quickFilter" (rowEditDone)="customersRowEditDone($event)" (rowDeleted)="customersRowDeleted($event)" (rowAdded)="customersRowAdded($event)" class="grid-plus">
   <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
       <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>

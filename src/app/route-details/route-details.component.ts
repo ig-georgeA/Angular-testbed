@@ -1,9 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { IRowSelectionEventArgs } from '@infragistics/igniteui-angular';
 import { Subject, take, takeUntil } from 'rxjs';
-import { ProductDto } from '../models/northwind-apiv2/product-dto';
-import { CustomerDto } from '../models/northwind-apiv2/customer-dto';
 import { OrderDto } from '../models/northwind-apiv2/order-dto';
+import { CustomerDto } from '../models/northwind-apiv2/customer-dto';
+import { ProductDto } from '../models/northwind-apiv2/product-dto';
 import { NorthwindAPIv2Service } from '../services/northwind-apiv2.service';
 
 @Component({
@@ -17,15 +17,6 @@ export class RouteDetailsComponent implements OnInit, OnDestroy {
   public selectedCustomer$: Subject<void> = new Subject<void>();
 
 
-  private _varOrderID?: number;
-  public get varOrderID(): number | undefined {
-    return this._varOrderID;
-  }
-  public set varOrderID(value: number | undefined) {
-    this._varOrderID = value;
-    this.northwindAPIv2ProductDto$.next();
-  }
-
   private _rCustomerID?: string = 'ALFKI';
   public get rCustomerID(): string | undefined {
     return this._rCustomerID;
@@ -34,6 +25,15 @@ export class RouteDetailsComponent implements OnInit, OnDestroy {
     this._rCustomerID = value;
     this.selectedCustomer$.next();
     this.northwindAPIv2OrderDto$.next();
+  }
+
+  private _varOrderID?: number;
+  public get varOrderID(): number | undefined {
+    return this._varOrderID;
+  }
+  public set varOrderID(value: number | undefined) {
+    this._varOrderID = value;
+    this.northwindAPIv2ProductDto$.next();
   }
   public singleSelectComboVisible: boolean = false;
   public avatarVisible: boolean = false;
@@ -54,28 +54,28 @@ export class RouteDetailsComponent implements OnInit, OnDestroy {
       error: (_err: any) => this.selectedCustomer = undefined
     });
     this.selectedCustomer$.pipe(takeUntil(this.destroy$)).subscribe(
-      () => this.northwindAPIv2Service.getCustomerDto(this.rCustomerID as any).pipe(take(1)).subscribe({
+      () => { this.northwindAPIv2Service.getCustomerDto(this.rCustomerID as any).pipe(take(1)).subscribe({
         next: (data) => this.selectedCustomer = data,
         error: (_err: any) => this.selectedCustomer = undefined
-    }));
+    })});
     this.northwindAPIv2Service.getOrderDtoList(this.rCustomerID as any).pipe(takeUntil(this.destroy$)).subscribe({
       next: (data) => this.northwindAPIv2OrderDto = data,
       error: (_err: any) => this.northwindAPIv2OrderDto = []
     });
     this.northwindAPIv2OrderDto$.pipe(takeUntil(this.destroy$)).subscribe(
-      () => this.northwindAPIv2Service.getOrderDtoList(this.rCustomerID as any).pipe(take(1)).subscribe({
+      () => { this.northwindAPIv2Service.getOrderDtoList(this.rCustomerID as any).pipe(take(1)).subscribe({
         next: (data) => this.northwindAPIv2OrderDto = data,
         error: (_err: any) => this.northwindAPIv2OrderDto = []
-    }));
+    })});
     this.northwindAPIv2Service.getProductDtoList(this.varOrderID as any).pipe(takeUntil(this.destroy$)).subscribe({
       next: (data) => this.northwindAPIv2ProductDto = data,
       error: (_err: any) => this.northwindAPIv2ProductDto = []
     });
     this.northwindAPIv2ProductDto$.pipe(takeUntil(this.destroy$)).subscribe(
-      () => this.northwindAPIv2Service.getProductDtoList(this.varOrderID as any).pipe(take(1)).subscribe({
+      () => { this.northwindAPIv2Service.getProductDtoList(this.varOrderID as any).pipe(take(1)).subscribe({
         next: (data) => this.northwindAPIv2ProductDto = data,
         error: (_err: any) => this.northwindAPIv2ProductDto = []
-    }));
+    })});
   }
 
   ngOnDestroy() {

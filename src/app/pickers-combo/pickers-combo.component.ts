@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { CustomersType } from '../models/northwind/customers-type';
 import { EmployeesType } from '../models/northwind/employees-type';
+import { CustomersType } from '../models/northwind/customers-type';
 import { NorthwindService } from '../services/northwind.service';
 
 @Component({
