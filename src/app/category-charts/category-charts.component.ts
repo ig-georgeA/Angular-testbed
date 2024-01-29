@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { GlobalElectricityDemandType } from '../models/financial/global-electricity-demand-type';
+import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { TradingType } from '../models/financial/trading-type';
 import { FinancialService } from '../services/financial.service';
 

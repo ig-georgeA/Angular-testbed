@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, take, takeUntil } from 'rxjs';
-import { StockData } from '../models/fin-tech_api/stock-data';
 import { Stock } from '../models/fin-tech_api/stock';
+import { StockData } from '../models/fin-tech_api/stock-data';
 import { FinTechAPIService } from '../services/fin-tech-api.service';
 
 @Component({
@@ -43,10 +43,10 @@ export class FinancialChartComponent implements OnInit, OnDestroy {
       error: (_err: any) => this.finTechAPIStockData = []
     });
     this.finTechAPIStockData$.pipe(takeUntil(this.destroy$)).subscribe(
-      () => this.finTechAPIService.getStockDataList(this.selectedStock?.stock_symbol as any).pipe(take(1)).subscribe({
+      () => { this.finTechAPIService.getStockDataList(this.selectedStock?.stock_symbol as any).pipe(take(1)).subscribe({
         next: (data) => this.finTechAPIStockData = data,
         error: (_err: any) => this.finTechAPIStockData = []
-    }));
+    })});
   }
 
   ngOnDestroy() {

@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { IRowSelectionEventArgs } from '@infragistics/igniteui-angular';
 import { Subject, take, takeUntil } from 'rxjs';
-import { CustomerDto } from '../models/northwind-apiv2/customer-dto';
 import { OrderDto } from '../models/northwind-apiv2/order-dto';
+import { CustomerDto } from '../models/northwind-apiv2/customer-dto';
 import { OrderDetailDto } from '../models/northwind-apiv2/order-detail-dto';
 import { NorthwindAPIv2Service } from '../services/northwind-apiv2.service';
 
@@ -22,6 +22,7 @@ export class SelectionDetailComponent implements OnInit, OnDestroy {
     this._varOrderID = value;
     this.northwindAPIv2OrderDetailDto$.next();
   }
+  public varCustomerID: string = 'ALFKI';
 
   private _varCustomer?: CustomerDto;
   public get varCustomer(): CustomerDto | undefined {
@@ -31,7 +32,6 @@ export class SelectionDetailComponent implements OnInit, OnDestroy {
     this._varCustomer = value;
     this.northwindAPIv2OrderDto$.next();
   }
-  public varCustomerID: string = 'ALFKI';
   public northwindAPIv2CustomerDto: CustomerDto[] = [];
   public singleSelectComboVisible1: boolean = false;
   public northwindAPIv2OrderDto: OrderDto[] = [];
@@ -59,19 +59,19 @@ export class SelectionDetailComponent implements OnInit, OnDestroy {
       error: (_err: any) => this.northwindAPIv2OrderDto = []
     });
     this.northwindAPIv2OrderDto$.pipe(takeUntil(this.destroy$)).subscribe(
-      () => this.northwindAPIv2Service.getOrderDtoList(this.varCustomer?.customerId as any).pipe(take(1)).subscribe({
+      () => { this.northwindAPIv2Service.getOrderDtoList(this.varCustomer?.customerId as any).pipe(take(1)).subscribe({
         next: (data) => this.northwindAPIv2OrderDto = data,
         error: (_err: any) => this.northwindAPIv2OrderDto = []
-    }));
+    })});
     this.northwindAPIv2Service.getOrderDetailDtoList(this.varOrderID as any).pipe(takeUntil(this.destroy$)).subscribe({
       next: (data) => this.northwindAPIv2OrderDetailDto = data,
       error: (_err: any) => this.northwindAPIv2OrderDetailDto = []
     });
     this.northwindAPIv2OrderDetailDto$.pipe(takeUntil(this.destroy$)).subscribe(
-      () => this.northwindAPIv2Service.getOrderDetailDtoList(this.varOrderID as any).pipe(take(1)).subscribe({
+      () => { this.northwindAPIv2Service.getOrderDetailDtoList(this.varOrderID as any).pipe(take(1)).subscribe({
         next: (data) => this.northwindAPIv2OrderDetailDto = data,
         error: (_err: any) => this.northwindAPIv2OrderDetailDto = []
-    }));
+    })});
   }
 
   ngOnDestroy() {

@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
+import { EmployeesType } from '../models/northwind/employees-type';
 import { BoxOfficeRevenueType } from '../models/financial/box-office-revenue-type';
 import { CustomersType } from '../models/northwind/customers-type';
-import { EmployeesType } from '../models/northwind/employees-type';
 import { FinancialService } from '../services/financial.service';
 import { NorthwindService } from '../services/northwind.service';
 

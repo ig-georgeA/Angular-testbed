@@ -28,6 +28,7 @@ import { InputsComponent } from './inputs/inputs.component';
 import { PickersComboComponent } from './pickers-combo/pickers-combo.component';
 import { DialogsAndDropdownsComponent } from './dialogs-and-dropdowns/dialogs-and-dropdowns.component';
 import { ImageComponent } from './image/image.component';
+import { ChildViewComponent } from './child-view/child-view.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -54,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
     InputsComponent,
     PickersComboComponent,
     DialogsAndDropdownsComponent,
-    ImageComponent
+    ImageComponent,
+    ChildViewComponent
   ],
   imports: [
     BrowserModule,

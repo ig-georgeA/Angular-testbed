@@ -71,6 +71,16 @@ export class NorthwindAPIv2Service {
     return this.http.get<EmployeeDto[]>(`${API_ENDPOINT}/Employees`, options);
   }
 
+  public putCustomerDto(data: any): Observable<CustomerDto> {
+    const options = {
+      headers: {
+        Authorization: 'Bearer <auth_value>',
+      },
+    };
+    const body = data;
+    return this.http.put<CustomerDto>(`${API_ENDPOINT}/Customers`, body, options);
+  }
+
   public deleteCustomerDto(id: string): Observable<CustomerDto> {
     const options = {
       headers: {
@@ -88,15 +98,5 @@ export class NorthwindAPIv2Service {
     };
     const body = data;
     return this.http.post<CustomerDto>(`${API_ENDPOINT}/Customers`, body, options);
-  }
-
-  public putCustomerDto(data: any): Observable<CustomerDto> {
-    const options = {
-      headers: {
-        Authorization: 'Bearer <auth_value>',
-      },
-    };
-    const body = data;
-    return this.http.put<CustomerDto>(`${API_ENDPOINT}/Customers`, body, options);
   }
 }
