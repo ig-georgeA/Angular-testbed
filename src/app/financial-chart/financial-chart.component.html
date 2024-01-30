@@ -12,13 +12,13 @@
 <div class="column-layout group_1">
   <div class="column-layout group_2">
     <div class="row-layout group_3">
-      <img [src]="selectedStock!?.img_url" class="image" />
+      <img [src]="selectedStock?.img_url" class="image" />
       <div class="column-layout group_4">
         <h5 class="content">
-          {{ selectedStock!?.stock_symbol }}
+          {{ selectedStock?.stock_symbol }}
         </h5>
         <h6 class="content">
-          {{ selectedStock!?.stock_name }}
+          {{ selectedStock?.stock_name }}
         </h6>
       </div>
     </div>
@@ -28,7 +28,7 @@
           Prev Close
         </p>
         <p class="content">
-          {{ selectedStock!?.previous_close }}
+          {{ selectedStock?.previous_close }}
         </p>
       </div>
       <div class="column-layout group_6">
@@ -36,7 +36,7 @@
           PE Ratio
         </p>
         <p class="content">
-          {{ selectedStock!?.pe_ratio }}
+          {{ selectedStock?.pe_ratio }}
         </p>
       </div>
       <div class="column-layout group_6">
@@ -44,7 +44,7 @@
           Earnings Date
         </p>
         <p class="content">
-          {{ selectedStock!?.earnings_date }}
+          {{ selectedStock?.earnings_date }}
         </p>
       </div>
     </div>
